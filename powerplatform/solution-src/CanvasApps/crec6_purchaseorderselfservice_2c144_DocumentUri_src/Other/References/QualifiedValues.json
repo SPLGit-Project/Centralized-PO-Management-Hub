@@ -1,0 +1,60 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_crec6_purchaseorder_forms",
+      "Namespace": "Purchase Orders (Forms)",
+      "Values": {
+        "Information": "e7c17aa8-3928-4443-ac40-b2b2fbc7cd15"
+      }
+    },
+    {
+      "Kind": "default.cds_crec6_purchaseorderline_forms",
+      "Namespace": "Purchase Order Lines (Forms)",
+      "Values": {
+        "Information": "bb30baf5-910b-4037-aca0-981f7ec810b6"
+      }
+    },
+    {
+      "Kind": "default.cds_new_poitemdatabase_forms",
+      "Namespace": "PO Item Databases (Forms)",
+      "Values": {
+        "Information": "a2fe5be5-4c0a-4fe7-99a1-de1596cbd33e"
+      }
+    },
+    {
+      "Kind": "default.cds_new_poolgroup_forms",
+      "Namespace": "Pool Group (Forms)",
+      "Values": {
+        "Information": "d6ff20e0-b4c0-45be-ba7b-d7d54e1b726d"
+      }
+    },
+    {
+      "Kind": "default.cds_new_cataloggroup_forms",
+      "Namespace": "Catalog Group (Forms)",
+      "Values": {
+        "Information": "d27036b4-4e05-4676-8e6b-652a8ba9cc72"
+      }
+    },
+    {
+      "Kind": "default.cds_crec6_polocation_forms",
+      "Namespace": "SPL Locations (Forms)",
+      "Values": {
+        "Information": "c7f40470-9139-44ab-ad22-a8fb9bfcf232"
+      }
+    },
+    {
+      "Kind": "default.cds_new_pattern_forms",
+      "Namespace": "Pattern (Forms)",
+      "Values": {
+        "Information": "5fb9157d-742f-4d7d-88fd-d5114516314b"
+      }
+    },
+    {
+      "Kind": "default.cds_new_material_forms",
+      "Namespace": "Material (Forms)",
+      "Values": {
+        "Information": "b887aa35-e482-405e-81cd-fb3b1c32e6a3"
+      }
+    }
+  ]
+}

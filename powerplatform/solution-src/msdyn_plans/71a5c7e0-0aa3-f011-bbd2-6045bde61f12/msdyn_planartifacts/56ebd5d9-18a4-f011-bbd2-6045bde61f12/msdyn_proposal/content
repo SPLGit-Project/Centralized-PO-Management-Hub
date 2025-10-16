@@ -1,0 +1,91 @@
+{
+  "name": "Procurement Manager Hub",
+  "description": "For procurement managers to maintain catalogs, suppliers, approve orders, manage lookup data and analyze procurement activities.",
+  "typesOfUsers": [
+    "Procurement manager"
+  ],
+  "tableSchemaNames": [
+    "crec6_PurchaseOrder",
+    "crec6_PurchaseOrderLine",
+    "crec6_Supplier",
+    "crec6_POLocation",
+    "new_POItemDatabase",
+    "new_poolgroup",
+    "new_cataloggroup",
+    "new_pattern",
+    "new_material"
+  ],
+  "userStories": [
+    {
+      "id": "us07",
+      "description": "Maintain and update the product catalog and lookup data so that item information remains accurate and complete.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us08",
+      "description": "Approve or reject submitted purchase orders so that only valid requests are processed.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us09",
+      "description": "Assign suppliers and update delivery information so that orders reach the correct vendor and location.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us10",
+      "description": "Track the status of all purchase orders so that I can monitor procurement progress.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us11",
+      "description": "Manage suppliers and locations so that data is always up to date.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us12",
+      "description": "View analytics dashboards to analyze spend by supplier, approval times, and order status so that I can make informed decisions.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us13",
+      "description": "Review audit logs of procurement activities so that compliance and accountability are maintained.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us19",
+      "description": "Approve or reject purchase orders with comments so that feedback is provided to requesters and records are documented.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us20",
+      "description": "Edit purchase order lines before approval so that requests are corrected or clarified prior to finalizing orders.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us21",
+      "description": "Deactivate obsolete items in the product catalog so that only valid items are available for selection.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us22",
+      "description": "Bulk edit and import data for items and suppliers so that catalog and supplier records can be efficiently maintained.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us23",
+      "description": "View dashboards filtered by status, supplier and spend so that procurement insights and trends can be monitored.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us24",
+      "description": "Set approval thresholds for purchase orders so that requests exceeding a certain value trigger additional review.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us25",
+      "description": "Maintain audit logs for all purchase order actions so that compliance and accountability are ensured.",
+      "userType": "Procurement manager"
+    }
+  ],
+  "version": 1
+}

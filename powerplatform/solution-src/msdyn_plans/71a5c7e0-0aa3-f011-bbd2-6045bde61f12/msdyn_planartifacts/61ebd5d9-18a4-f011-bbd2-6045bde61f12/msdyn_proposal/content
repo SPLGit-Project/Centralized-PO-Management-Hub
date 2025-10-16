@@ -1,0 +1,28 @@
+{
+  "name": "Order Status Notification",
+  "description": "Notifies purchasers via email and Teams whenever their PO status or comments change, keeping users instantly informed.",
+  "typesOfUsers": [
+    "Purchaser"
+  ],
+  "tableSchemaNames": [
+    "crec6_PurchaseOrder"
+  ],
+  "userStories": [
+    {
+      "id": "us06",
+      "description": "Receive notifications when my purchase order status changes so that I am updated in real time.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us32",
+      "description": "See live status and review comments associated with my purchase orders so that I am always updated on progress or required actions.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us33",
+      "description": "Receive alerts via email or Microsoft Teams when my purchase order is approved or rejected so that I am notified immediately.",
+      "userType": "Purchaser"
+    }
+  ],
+  "version": 1
+}

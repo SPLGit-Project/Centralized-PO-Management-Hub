@@ -1,0 +1,788 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Welcome screen:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+    Children:
+      - ScreenContainer9:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            Fill: =RGBA(245, 245, 245, 1)
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =16
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Width: =Parent.Width
+          Children:
+            - HeaderContainer1:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  FillPortions: =0
+                  Height: =75
+                  LayoutDirection: =LayoutDirection.Horizontal
+                  RadiusBottomLeft: =8
+                  RadiusBottomRight: =8
+                  RadiusTopLeft: =8
+                  RadiusTopRight: =8
+                Children:
+                  - Header1:
+                      Control: Header@0.0.44
+                      Properties:
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FontColor: =RGBA(0, 0, 0, 1)
+                        Logo: =spl_logo_white_small
+                        Title: ="Purchase Order Hub"
+            - MainContainer9:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  DropShadow: =DropShadow.None
+                  Fill: =RGBA(245, 245, 245, 1)
+                  LayoutAlignItems: =LayoutAlignItems.Stretch
+                  LayoutDirection: =LayoutDirection.Horizontal
+                  LayoutGap: =16
+                  LayoutOverflowY: =LayoutOverflow.Scroll
+                  LayoutWrap: =true
+                  PaddingBottom: =2
+                  PaddingLeft: =2
+                  PaddingRight: =2
+                  PaddingTop: =2
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                Children:
+                  - Container1:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        Fill: =RGBA(0, 169, 224, 1)
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =300
+                        LayoutMinWidth: =If('Welcome screen'.Size = ScreenSize.Small, Parent.Width, 400)
+                        LayoutOverflowY: =LayoutOverflow.Scroll
+                        PaddingBottom: =10
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =10
+                      Children:
+                        - ImageContainer1:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              FillPortions: =1.5
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutGap: =5
+                              LayoutJustifyContent: =LayoutJustifyContent.End
+                              LayoutMinWidth: =Container1.Width
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - Image1:
+                                  Control: Image@2.2.3
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    ImagePosition: =ImagePosition.Fill
+                                    OnSelect: =Navigate('Purchase Orders screen')
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    RadiusBottomLeft: =90
+                                    RadiusBottomRight: =90
+                                    RadiusTopLeft: =90
+                                    RadiusTopRight: =90
+                        - TitleContainer1:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutMinWidth: =Container1.Width
+                              PaddingTop: =20
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - FeatureItemButton1:
+                                  Control: Button@0.0.45
+                                  Properties:
+                                    AccessibleLabel: ="Featured item button"
+                                    Appearance: ='ButtonCanvas.Appearance'.Transparent
+                                    FontSize: =20
+                                    FontWeight: =FontWeight.Bold
+                                    LayoutMinWidth: =Parent.Width
+                                    OnSelect: =Navigate('Purchase Orders screen')
+                                    Text: ="Purchase Orders"
+                                    Width: =Parent.Width
+                              - DescriptionText1:
+                                  Control: Text@0.0.51
+                                  Properties:
+                                    Align: ='TextCanvas.Align'.Center
+                                    FillPortions: =1
+                                    LayoutMinWidth: =Parent.Width
+                                    Size: =16
+                                    Text: ="This table contains records of purchase orders created by team members."
+                                    VerticalAlign: =VerticalAlign.Top
+                                    Width: =Parent.Width
+                  - Container1_1:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        Fill: =RGBA(0, 169, 224, 1)
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =300
+                        LayoutMinWidth: =If('Welcome screen'.Size = ScreenSize.Small, Parent.Width, 400)
+                        LayoutOverflowY: =LayoutOverflow.Scroll
+                        PaddingBottom: =10
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =10
+                      Children:
+                        - ImageContainer1_1:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              FillPortions: =1.5
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutGap: =5
+                              LayoutJustifyContent: =LayoutJustifyContent.End
+                              LayoutMinWidth: =Container1_1.Width
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - Image1_1:
+                                  Control: Image@2.2.3
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    ImagePosition: =ImagePosition.Fill
+                                    OnSelect: =Navigate('Purchase Order Lines screen')
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    RadiusBottomLeft: =90
+                                    RadiusBottomRight: =90
+                                    RadiusTopLeft: =90
+                                    RadiusTopRight: =90
+                        - TitleContainer1_1:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutMinWidth: =Container1_1.Width
+                              PaddingTop: =20
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - FeatureItemButton1_1:
+                                  Control: Button@0.0.45
+                                  Properties:
+                                    AccessibleLabel: ="Featured item button"
+                                    Appearance: ='ButtonCanvas.Appearance'.Transparent
+                                    FontSize: =20
+                                    FontWeight: =FontWeight.Bold
+                                    LayoutMinWidth: =Parent.Width
+                                    OnSelect: =Navigate('Purchase Order Lines screen')
+                                    Text: ="Purchase Order Lines"
+                                    Width: =Parent.Width
+                              - DescriptionText1_1:
+                                  Control: Text@0.0.51
+                                  Properties:
+                                    Align: ='TextCanvas.Align'.Center
+                                    FillPortions: =1
+                                    LayoutMinWidth: =Parent.Width
+                                    Size: =16
+                                    Text: ="Line items within purchase orders detailing item, supplier, quantity, and pricing"
+                                    VerticalAlign: =VerticalAlign.Top
+                                    Width: =Parent.Width
+                  - Container1_2:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        Fill: =RGBA(0, 169, 224, 1)
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =300
+                        LayoutMinWidth: =If('Welcome screen'.Size = ScreenSize.Small, Parent.Width, 400)
+                        LayoutOverflowY: =LayoutOverflow.Scroll
+                        PaddingBottom: =10
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =10
+                      Children:
+                        - ImageContainer1_2:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              FillPortions: =1.5
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutGap: =5
+                              LayoutJustifyContent: =LayoutJustifyContent.End
+                              LayoutMinWidth: =Container1_2.Width
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - Image1_2:
+                                  Control: Image@2.2.3
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    ImagePosition: =ImagePosition.Fill
+                                    OnSelect: =Navigate('PO Item Databases screen')
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    RadiusBottomLeft: =90
+                                    RadiusBottomRight: =90
+                                    RadiusTopLeft: =90
+                                    RadiusTopRight: =90
+                        - TitleContainer1_2:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutMinWidth: =Container1_2.Width
+                              PaddingTop: =20
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - FeatureItemButton1_2:
+                                  Control: Button@0.0.45
+                                  Properties:
+                                    AccessibleLabel: ="Featured item button"
+                                    Appearance: ='ButtonCanvas.Appearance'.Transparent
+                                    FontSize: =20
+                                    FontWeight: =FontWeight.Bold
+                                    LayoutMinWidth: =Parent.Width
+                                    OnSelect: =Navigate('PO Item Databases screen')
+                                    Text: ="PO Item Databases"
+                                    Width: =Parent.Width
+                              - DescriptionText1_2:
+                                  Control: Text@0.0.51
+                                  Properties:
+                                    Align: ='TextCanvas.Align'.Center
+                                    FillPortions: =1
+                                    LayoutMinWidth: =Parent.Width
+                                    Size: =16
+                                    Text: =""
+                                    VerticalAlign: =VerticalAlign.Top
+                                    Width: =Parent.Width
+                  - Container1_3:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        Fill: =RGBA(0, 169, 224, 1)
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =300
+                        LayoutMinWidth: =If('Welcome screen'.Size = ScreenSize.Small, Parent.Width, 400)
+                        LayoutOverflowY: =LayoutOverflow.Scroll
+                        PaddingBottom: =10
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =10
+                      Children:
+                        - ImageContainer1_3:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              FillPortions: =1.5
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutGap: =5
+                              LayoutJustifyContent: =LayoutJustifyContent.End
+                              LayoutMinWidth: =Container1_3.Width
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - Image1_3:
+                                  Control: Image@2.2.3
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    ImagePosition: =ImagePosition.Fill
+                                    OnSelect: =Navigate('Pool Group screen')
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    RadiusBottomLeft: =90
+                                    RadiusBottomRight: =90
+                                    RadiusTopLeft: =90
+                                    RadiusTopRight: =90
+                        - TitleContainer1_3:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutMinWidth: =Container1_3.Width
+                              PaddingTop: =20
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - FeatureItemButton1_3:
+                                  Control: Button@0.0.45
+                                  Properties:
+                                    AccessibleLabel: ="Featured item button"
+                                    Appearance: ='ButtonCanvas.Appearance'.Transparent
+                                    FontSize: =20
+                                    FontWeight: =FontWeight.Bold
+                                    LayoutMinWidth: =Parent.Width
+                                    OnSelect: =Navigate('Pool Group screen')
+                                    Text: ="Pool Group"
+                                    Width: =Parent.Width
+                              - DescriptionText1_3:
+                                  Control: Text@0.0.51
+                                  Properties:
+                                    Align: ='TextCanvas.Align'.Center
+                                    FillPortions: =1
+                                    LayoutMinWidth: =Parent.Width
+                                    Size: =16
+                                    Text: ="This table contains information about pool groups."
+                                    VerticalAlign: =VerticalAlign.Top
+                                    Width: =Parent.Width
+                  - Container1_4:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        Fill: =RGBA(0, 169, 224, 1)
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =300
+                        LayoutMinWidth: =If('Welcome screen'.Size = ScreenSize.Small, Parent.Width, 400)
+                        LayoutOverflowY: =LayoutOverflow.Scroll
+                        PaddingBottom: =10
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =10
+                      Children:
+                        - ImageContainer1_4:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              FillPortions: =1.5
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutGap: =5
+                              LayoutJustifyContent: =LayoutJustifyContent.End
+                              LayoutMinWidth: =Container1_4.Width
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - Image1_4:
+                                  Control: Image@2.2.3
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    ImagePosition: =ImagePosition.Fill
+                                    OnSelect: =Navigate('Catalog Group screen')
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    RadiusBottomLeft: =90
+                                    RadiusBottomRight: =90
+                                    RadiusTopLeft: =90
+                                    RadiusTopRight: =90
+                        - TitleContainer1_4:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutMinWidth: =Container1_4.Width
+                              PaddingTop: =20
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - FeatureItemButton1_4:
+                                  Control: Button@0.0.45
+                                  Properties:
+                                    AccessibleLabel: ="Featured item button"
+                                    Appearance: ='ButtonCanvas.Appearance'.Transparent
+                                    FontSize: =20
+                                    FontWeight: =FontWeight.Bold
+                                    LayoutMinWidth: =Parent.Width
+                                    OnSelect: =Navigate('Catalog Group screen')
+                                    Text: ="Catalog Group"
+                                    Width: =Parent.Width
+                              - DescriptionText1_4:
+                                  Control: Text@0.0.51
+                                  Properties:
+                                    Align: ='TextCanvas.Align'.Center
+                                    FillPortions: =1
+                                    LayoutMinWidth: =Parent.Width
+                                    Size: =16
+                                    Text: ="This table contains catalog group codes and their names."
+                                    VerticalAlign: =VerticalAlign.Top
+                                    Width: =Parent.Width
+                  - Container1_5:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        Fill: =RGBA(0, 169, 224, 1)
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =300
+                        LayoutMinWidth: =If('Welcome screen'.Size = ScreenSize.Small, Parent.Width, 400)
+                        LayoutOverflowY: =LayoutOverflow.Scroll
+                        PaddingBottom: =10
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =10
+                      Children:
+                        - ImageContainer1_5:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              FillPortions: =1.5
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutGap: =5
+                              LayoutJustifyContent: =LayoutJustifyContent.End
+                              LayoutMinWidth: =Container1_5.Width
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - Image1_5:
+                                  Control: Image@2.2.3
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    ImagePosition: =ImagePosition.Fill
+                                    OnSelect: =Navigate('SPL Locations screen')
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    RadiusBottomLeft: =90
+                                    RadiusBottomRight: =90
+                                    RadiusTopLeft: =90
+                                    RadiusTopRight: =90
+                        - TitleContainer1_5:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutMinWidth: =Container1_5.Width
+                              PaddingTop: =20
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - FeatureItemButton1_5:
+                                  Control: Button@0.0.45
+                                  Properties:
+                                    AccessibleLabel: ="Featured item button"
+                                    Appearance: ='ButtonCanvas.Appearance'.Transparent
+                                    FontSize: =20
+                                    FontWeight: =FontWeight.Bold
+                                    LayoutMinWidth: =Parent.Width
+                                    OnSelect: =Navigate('SPL Locations screen')
+                                    Text: ="SPL Locations"
+                                    Width: =Parent.Width
+                              - DescriptionText1_5:
+                                  Control: Text@0.0.51
+                                  Properties:
+                                    Align: ='TextCanvas.Align'.Center
+                                    FillPortions: =1
+                                    LayoutMinWidth: =Parent.Width
+                                    Size: =16
+                                    Text: ="Locations where purchase orders are delivered"
+                                    VerticalAlign: =VerticalAlign.Top
+                                    Width: =Parent.Width
+                  - Container1_6:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        Fill: =RGBA(255, 255, 255, 1)
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =300
+                        LayoutMinWidth: =If('Welcome screen'.Size = ScreenSize.Small, Parent.Width, 400)
+                        LayoutOverflowY: =LayoutOverflow.Scroll
+                        PaddingBottom: =10
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =10
+                      Children:
+                        - ImageContainer1_6:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              FillPortions: =1.5
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutGap: =5
+                              LayoutJustifyContent: =LayoutJustifyContent.End
+                              LayoutMinWidth: =Container1_6.Width
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - Image1_6:
+                                  Control: Image@2.2.3
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    ImagePosition: =ImagePosition.Fill
+                                    OnSelect: =Navigate('Pattern screen')
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    RadiusBottomLeft: =90
+                                    RadiusBottomRight: =90
+                                    RadiusTopLeft: =90
+                                    RadiusTopRight: =90
+                        - TitleContainer1_6:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutMinWidth: =Container1_6.Width
+                              PaddingTop: =20
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - FeatureItemButton1_6:
+                                  Control: Button@0.0.45
+                                  Properties:
+                                    AccessibleLabel: ="Featured item button"
+                                    Appearance: ='ButtonCanvas.Appearance'.Transparent
+                                    FontSize: =20
+                                    FontWeight: =FontWeight.Bold
+                                    LayoutMinWidth: =Parent.Width
+                                    OnSelect: =Navigate('Pattern screen')
+                                    Text: ="Pattern"
+                                    Width: =Parent.Width
+                              - DescriptionText1_6:
+                                  Control: Text@0.0.51
+                                  Properties:
+                                    Align: ='TextCanvas.Align'.Center
+                                    FillPortions: =1
+                                    LayoutMinWidth: =Parent.Width
+                                    Size: =16
+                                    Text: ="This table contains pattern names."
+                                    VerticalAlign: =VerticalAlign.Top
+                                    Width: =Parent.Width
+                  - Container1_7:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        Fill: =RGBA(255, 255, 255, 1)
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =300
+                        LayoutMinWidth: =If('Welcome screen'.Size = ScreenSize.Small, Parent.Width, 400)
+                        LayoutOverflowY: =LayoutOverflow.Scroll
+                        PaddingBottom: =10
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =10
+                      Children:
+                        - ImageContainer1_7:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              FillPortions: =1.5
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutGap: =5
+                              LayoutJustifyContent: =LayoutJustifyContent.End
+                              LayoutMinWidth: =Container1_7.Width
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - Image1_7:
+                                  Control: Image@2.2.3
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    ImagePosition: =ImagePosition.Fill
+                                    OnSelect: =Navigate('Material screen')
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    RadiusBottomLeft: =90
+                                    RadiusBottomRight: =90
+                                    RadiusTopLeft: =90
+                                    RadiusTopRight: =90
+                        - TitleContainer1_7:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Center
+                              DropShadow: =DropShadow.None
+                              LayoutDirection: =LayoutDirection.Vertical
+                              LayoutMinWidth: =Container1_7.Width
+                              PaddingTop: =20
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                              Width: =Parent.Width
+                            Children:
+                              - FeatureItemButton1_7:
+                                  Control: Button@0.0.45
+                                  Properties:
+                                    AccessibleLabel: ="Featured item button"
+                                    Appearance: ='ButtonCanvas.Appearance'.Transparent
+                                    FontSize: =20
+                                    FontWeight: =FontWeight.Bold
+                                    LayoutMinWidth: =Parent.Width
+                                    OnSelect: =Navigate('Material screen')
+                                    Text: ="Material"
+                                    Width: =Parent.Width
+                              - DescriptionText1_7:
+                                  Control: Text@0.0.51
+                                  Properties:
+                                    Align: ='TextCanvas.Align'.Center
+                                    FillPortions: =1
+                                    LayoutMinWidth: =Parent.Width
+                                    Size: =16
+                                    Text: ="This table contains material information."
+                                    VerticalAlign: =VerticalAlign.Top
+                                    Width: =Parent.Width

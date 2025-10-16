@@ -1,0 +1,3 @@
+{
+  "AppFromDataMetaDataIdsToEntityNameMappings": "{\"%DataSourceName.AFD%\":\"Material\",\"%DataSourceValue.AFD%\":\"[@Material]\",\"%SortFieldName.AFD%\":\"\\\"new_materialname\\\"\",\"%FilterFieldName.AFD%\":\"new_materialname\",\"%PrimaryNameField.AFD%\":\"new_materialname\",\"%PrimaryNameFieldDisplayName.AFD%\":\"'Material Name'\",\"%SearchFieldName.AFD%\":\"new_materialname\",\"%StartsWithFieldName.AFD%\":\"new_materialname\",\"%DeleteConfirmFieldName.AFD%\":\"new_materialname\",\"%SortDescending.AFD%\":\"SortDescending8\",\"%CopilotSinglePageScreen.ID%\":\"'Material screen'\",\"%BrowseContainer.ID%\":\"BrowseGallery8\",\"%DetailEditContainer.ID%\":\"EditForm8\"}"
+}

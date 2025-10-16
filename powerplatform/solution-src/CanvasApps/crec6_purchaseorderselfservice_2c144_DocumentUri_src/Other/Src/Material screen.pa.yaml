@@ -1,0 +1,697 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Material screen:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+    Children:
+      - ScreenContainer8:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(250, 250, 250, 1)
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =15
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Parent.Width
+          Children:
+            - TableNameContainer8:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  FillPortions: =0
+                  Height: =68
+                  LayoutAlignItems: =LayoutAlignItems.Center
+                  LayoutDirection: =LayoutDirection.Horizontal
+                Children:
+                  - TableNameLabel8:
+                      Control: Label@2.5.1
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(186, 186, 186, 1)
+                        Fill: =RGBA(0, 120, 212, 1)
+                        FillPortions: =1
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =68
+                        PaddingBottom: =16
+                        PaddingLeft: =16
+                        PaddingRight: =16
+                        PaddingTop: =16
+                        Size: =16
+                        Text: =DataSourceInfo([@Material], DataSourceInfo.DisplayName)
+                  - HomeIconButton8:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(56, 56, 56, 1)
+                        DisabledColor: =RGBA(119, 119, 119, 1)
+                        Fill: =RGBA(0, 120, 212, 1)
+                        Icon: =Icon.Home
+                        LayoutMinHeight: =32
+                        OnSelect: =Back()
+                        PaddingLeft: =5
+                        PaddingRight: =15
+                        TabIndex: =0
+                        Width: =52
+            - BodyContainer8:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  DropShadow: =DropShadow.None
+                  LayoutDirection: =LayoutDirection.Horizontal
+                  LayoutGap: =16
+                  PaddingBottom: =2
+                  PaddingLeft: =2
+                  PaddingRight: =2
+                  PaddingTop: =2
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                Children:
+                  - SidebarContainer8:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FillPortions: =If(And('Material screen'.Size = ScreenSize.Small, Or(newMode, editMode, itemSelected)), 0, 3)
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =10
+                        PaddingLeft: =16
+                        PaddingRight: =16
+                        PaddingTop: =10
+                        Visible: =If(And('Material screen'.Size = ScreenSize.Small, Or(newMode, editMode, itemSelected)), false, true)
+                      Children:
+                        - SearchContainer8:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              DropShadow: =DropShadow.None
+                              Fill: =RGBA(245, 245, 245, 1)
+                              FillPortions: =0
+                              Height: =44
+                              LayoutDirection: =LayoutDirection.Horizontal
+                              LayoutMinWidth: =0
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                            Children:
+                              - SearchInput8:
+                                  Control: Classic/TextInput@2.3.2
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =1
+                                    Color: =RGBA(70, 68, 64, 1)
+                                    Default: =""
+                                    DisabledBorderColor: =ColorFade(Self.BorderColor, 40%)
+                                    DisabledColor: =ColorFade(Self.Color, 40%)
+                                    DisabledFill: =Self.Fill
+                                    Fill: =RGBA(0, 0, 0, 0)
+                                    FillPortions: =1
+                                    FocusedBorderThickness: =3
+                                    Font: =Font.'Open Sans'
+                                    Height: =44
+                                    HintText: ="Search"
+                                    HoverBorderColor: =Self.Color
+                                    HoverColor: =Self.Color
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    LayoutMinWidth: =0
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    Size: =14
+                              - SearchIcon8:
+                                  Control: Classic/Icon@2.5.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(0, 120, 212, 1)
+                                    DisabledBorderColor: =RGBA(56, 56, 56, 1)
+                                    DisabledColor: =RGBA(119, 119, 119, 1)
+                                    Height: =44
+                                    Icon: =Icon.Search
+                                    PaddingBottom: =10
+                                    PaddingLeft: =10
+                                    PaddingRight: =10
+                                    PaddingTop: =10
+                                    Width: =44
+                        - NewRecordButtonBarContainer8:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              DropShadow: =DropShadow.None
+                              FillPortions: =0
+                              Height: =44
+                              LayoutDirection: =LayoutDirection.Horizontal
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                            Children:
+                              - NewRecordAddIcon8:
+                                  Control: Classic/Icon@2.5.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    Color: =RGBA(0, 120, 212, 1)
+                                    DisabledBorderColor: =RGBA(245, 245, 245, 1)
+                                    DisabledColor: =RGBA(225, 223, 221, 1)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    Height: =44
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverColor: =RGBA(16, 110, 190, 1)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    Icon: =Icon.Add
+                                    OnSelect: |-
+                                      =NewForm(Form8); UpdateContext({ newMode: true });
+                                    PaddingBottom: =10
+                                    PaddingLeft: =10
+                                    PaddingRight: =10
+                                    PaddingTop: =10
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedColor: =RGBA(16, 110, 190, 1)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    Width: =44
+                              - NewRecordLabel8:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    Color: =RGBA(50, 49, 48, 1)
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisabledColor: =RGBA(161, 159, 157, 1)
+                                    FillPortions: =1
+                                    FocusedBorderThickness: =4
+                                    Font: =Font.'Segoe UI'
+                                    Height: =44
+                                    Text: ="New"
+                        - RecordsListSeparator8:
+                            Control: Rectangle@2.3.0
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Stretch
+                              BorderColor: =RGBA(0, 0, 0, 0)
+                              BorderStyle: =BorderStyle.None
+                              BorderThickness: =2
+                              DisabledFill: =RGBA(161, 159, 157, 1)
+                              Fill: =RGBA(225, 223, 221, 1)
+                              FocusedBorderThickness: =4
+                              Height: =1
+                              HoverFill: =RGBA(0, 120, 212, 1)
+                              LayoutMinWidth: =200
+                              PressedFill: =RGBA(0, 120, 212, 1)
+                        - RecordsGallery8:
+                            Control: Gallery@2.15.0
+                            Variant: BrowseLayout_Vertical_OneTextVariant_ver5.0
+                            Properties:
+                              BorderColor: =RGBA(245, 245, 245, 1)
+                              Default: =CurrentItem
+                              Fill: =RGBA(250, 250, 250, 1)
+                              Items: =Search([@Material], SearchInput8.Text, new_materialname, new_materialname)
+                              LayoutMinWidth: =0
+                              OnSelect: |-
+                                =UpdateContext({ itemSelected: true, CurrentItem: ThisItem })
+                              TemplateFill: =If(ThisItem.IsSelected, RGBA(230, 230, 230, 1), RGBA(0, 0, 0, 0))
+                              TemplateSize: =104
+                            Children:
+                              - Title8:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Color: =RGBA(50, 49, 48, 1)
+                                    DisabledColor: =RGBA(161, 159, 157, 1)
+                                    Font: =Font.'Segoe UI'
+                                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                                    Height: =Self.Size * 1.8
+                                    OnSelect: =Select(Parent)
+                                    PaddingBottom: =0
+                                    PaddingLeft: =12
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =14
+                                    Text: =ThisItem.'Material Name'
+                                    VerticalAlign: =VerticalAlign.Top
+                                    Width: =Parent.TemplateWidth - 86
+                                    X: =16
+                                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                              - NextArrow8:
+                                  Control: Classic/Icon@2.5.0
+                                  Properties:
+                                    AccessibleLabel: =Self.Tooltip
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    Color: =RGBA(166, 166, 166, 1)
+                                    DisabledBorderColor: =RGBA(245, 245, 245, 1)
+                                    DisabledColor: =RGBA(225, 223, 221, 1)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    Height: =50
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverColor: =RGBA(16, 110, 190, 1)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    Icon: =Icon.ChevronRight
+                                    OnSelect: =Select(Parent)
+                                    PaddingBottom: =12
+                                    PaddingLeft: =12
+                                    PaddingRight: =12
+                                    PaddingTop: =12
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedColor: =RGBA(16, 110, 190, 1)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    Tooltip: ="View item details"
+                                    Width: =50
+                                    X: =Parent.TemplateWidth - Self.Width - 12
+                                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                              - Separator9:
+                                  Control: Rectangle@2.3.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    Fill: =RGBA(255, 255, 255, 1)
+                                    Height: =8
+                                    OnSelect: =Select(Parent)
+                                    Width: =Parent.TemplateWidth
+                                    Y: =Parent.TemplateHeight - Self.Height
+                              - Rectangle8:
+                                  Control: Rectangle@2.3.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    Fill: =RGBA(0, 120, 212, 1)
+                                    Height: =Parent.TemplateHeight - Separator9.Height
+                                    OnSelect: =Select(Parent)
+                                    Visible: =ThisItem.IsSelected
+                                    Width: =4
+                  - RightContainer8:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        DropShadow: =DropShadow.None
+                        FillPortions: =7
+                        LayoutAlignItems: =LayoutAlignItems.Stretch
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =16
+                        PaddingBottom: =2
+                        PaddingLeft: =2
+                        PaddingRight: =2
+                        PaddingTop: =2
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Visible: =If(Or(deleteMode, And('Material screen'.Size = ScreenSize.Small, !newMode, !editMode, !itemSelected)), false, true)
+                        Width: =0
+                      Children:
+                        - SelectedRecordHeaderContainer8:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              Fill: =RGBA(255, 255, 255, 1)
+                              FillPortions: =0
+                              Height: =50
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Horizontal
+                            Children:
+                              - BackIconButton8:
+                                  Control: Classic/Icon@2.5.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    Color: =RGBA(0, 120, 212, 1)
+                                    DisabledBorderColor: =RGBA(245, 245, 245, 1)
+                                    DisabledColor: =RGBA(225, 223, 221, 1)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    Height: =50
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverColor: =RGBA(16, 110, 190, 1)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    Icon: =Icon.ChevronLeft
+                                    OnSelect: |-
+                                      =UpdateContext({ itemSelected: false })
+                                    PaddingBottom: =12
+                                    PaddingLeft: =12
+                                    PaddingRight: =12
+                                    PaddingTop: =12
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedColor: =RGBA(16, 110, 190, 1)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    TabIndex: =0
+                                    Visible: =If('Material screen'.Size = ScreenSize.Small, And(!editMode, !newMode, !deleteMode), false)
+                                    Width: =50
+                              - SelectedRecordTitle8:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    AlignInContainer: =AlignInContainer.Stretch
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    Color: =RGBA(50, 49, 48, 1)
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisabledColor: =RGBA(161, 159, 157, 1)
+                                    FillPortions: =1
+                                    FocusedBorderThickness: =4
+                                    Font: =Font.'Segoe UI'
+                                    FontWeight: =FontWeight.Semibold
+                                    PaddingLeft: =30
+                                    Text: =RecordsGallery8.Selected.'Material Name'
+                              - SubmitFormButton8:
+                                  Control: Classic/Icon@2.5.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    Color: =RGBA(0, 120, 212, 1)
+                                    DisabledBorderColor: =RGBA(245, 245, 245, 1)
+                                    DisabledColor: =RGBA(225, 223, 221, 1)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    Height: =50
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverColor: =RGBA(16, 110, 190, 1)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    Icon: =Icon.Check
+                                    OnSelect: =SubmitForm(Form8)
+                                    PaddingBottom: =12
+                                    PaddingLeft: =12
+                                    PaddingRight: =12
+                                    PaddingTop: =12
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedColor: =RGBA(16, 110, 190, 1)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    TabIndex: =0
+                                    Visible: =Or(editMode, newMode)
+                                    Width: =50
+                              - ResetFormButton8:
+                                  Control: Classic/Icon@2.5.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    Color: =RGBA(0, 120, 212, 1)
+                                    DisabledBorderColor: =RGBA(245, 245, 245, 1)
+                                    DisabledColor: =RGBA(225, 223, 221, 1)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    Height: =50
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverColor: =RGBA(16, 110, 190, 1)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    Icon: =Icon.Cancel
+                                    OnSelect: |-
+                                      =ResetForm(Form8); UpdateContext({ editMode: false, newMode: false });
+                                    PaddingBottom: =12
+                                    PaddingLeft: =12
+                                    PaddingRight: =12
+                                    PaddingTop: =12
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedColor: =RGBA(16, 110, 190, 1)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    TabIndex: =0
+                                    Visible: =Or(editMode, newMode)
+                                    Width: =50
+                              - EditIconButton8:
+                                  Control: Classic/Icon@2.5.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    Color: =RGBA(0, 120, 212, 1)
+                                    DisabledBorderColor: =RGBA(245, 245, 245, 1)
+                                    DisabledColor: =RGBA(225, 223, 221, 1)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    Height: =50
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverColor: =RGBA(16, 110, 190, 1)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    Icon: =Icon.Edit
+                                    OnSelect: |-
+                                      =UpdateContext({ editMode: true, selectedRecord: RecordsGallery8.Selected })
+                                    PaddingBottom: =12
+                                    PaddingLeft: =12
+                                    PaddingRight: =12
+                                    PaddingTop: =12
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedColor: =RGBA(16, 110, 190, 1)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    TabIndex: =0
+                                    Visible: =And(!editMode, !newMode, !deleteMode)
+                                    Width: =50
+                              - DeleteIconButton8:
+                                  Control: Classic/Icon@2.5.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    Color: =RGBA(0, 120, 212, 1)
+                                    DisabledBorderColor: =RGBA(245, 245, 245, 1)
+                                    DisabledColor: =RGBA(225, 223, 221, 1)
+                                    DisabledFill: =RGBA(0, 0, 0, 0)
+                                    FocusedBorderThickness: =4
+                                    Height: =50
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverColor: =RGBA(16, 110, 190, 1)
+                                    HoverFill: =RGBA(0, 0, 0, 0)
+                                    Icon: =Icon.Trash
+                                    OnSelect: |-
+                                      =UpdateContext({ deleteMode: true, deleteCancelled: false, selectedRecord: RecordsGallery8.Selected })
+                                    PaddingBottom: =12
+                                    PaddingLeft: =12
+                                    PaddingRight: =12
+                                    PaddingTop: =12
+                                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                                    PressedColor: =RGBA(16, 110, 190, 1)
+                                    PressedFill: =RGBA(0, 0, 0, 0)
+                                    TabIndex: =0
+                                    Visible: =And(!editMode, !newMode, !deleteMode)
+                                    Width: =50
+                        - MainContainer8:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              Fill: =RGBA(255, 255, 255, 1)
+                              LayoutDirection: =LayoutDirection.Vertical
+                            Children:
+                              - Form8:
+                                  Control: Form@2.4.4
+                                  Variant: Classic
+                                  Layout: Vertical
+                                  Properties:
+                                    BorderColor: =RGBA(245, 245, 245, 1)
+                                    DataSource: =[@Material]
+                                    DefaultMode: =If(newMode, FormMode.New, editMode, FormMode.Edit, FormMode.View)
+                                    Item: =RecordsGallery8.Selected
+                                    LayoutMinWidth: =300
+                                    NumberOfColumns: =2
+                                    OnFailure: =Notify("Cannot save. Please check if there are errors in the form.", NotificationType.Error)
+                                    OnSuccess: |-
+                                      =UpdateContext({ CurrentItem: Self.LastSubmit, editMode: false, newMode: false })
+                                  Children:
+                                    - Material Name_DataCard1:
+                                        Control: TypedDataCard@1.0.7
+                                        Variant: ClassicTextualEdit
+                                        IsLocked: true
+                                        Properties:
+                                          BorderColor: =RGBA(245, 245, 245, 1)
+                                          DataField: ="new_materialname"
+                                          Default: =ThisItem.'Material Name'
+                                          DisplayName: =DataSourceInfo([@Material],DataSourceInfo.DisplayName,'new_materialname')
+                                          MaxLength: =DataSourceInfo([@Material], DataSourceInfo.MaxLength, 'new_materialname')
+                                          Required: =false
+                                          Update: =DataCardValue35.Text
+                                          Width: =400
+                                          X: =0
+                                          Y: =0
+                                        Children:
+                                          - DataCardKey36:
+                                              Control: Label@2.5.1
+                                              MetadataKey: FieldName
+                                              Properties:
+                                                AutoHeight: =true
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                BorderStyle: =BorderStyle.None
+                                                BorderThickness: =2
+                                                Color: =RGBA(50, 49, 48, 1)
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                                FocusedBorderThickness: =4
+                                                Font: =Font.'Segoe UI'
+                                                FontWeight: =FontWeight.Semibold
+                                                Height: =34
+                                                PaddingLeft: =0
+                                                Text: =Parent.DisplayName
+                                                Width: =Parent.Width - 60
+                                                Wrap: =false
+                                                X: =30
+                                                Y: =10
+                                          - DataCardValue35:
+                                              Control: Classic/TextInput@2.3.2
+                                              MetadataKey: FieldValue
+                                              Properties:
+                                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                                Color: =RGBA(50, 49, 48, 1)
+                                                Default: =Parent.Default
+                                                DelayOutput: =true
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                                DisabledFill: =RGBA(242, 242, 241, 0)
+                                                DisplayMode: =Parent.DisplayMode
+                                                Font: =Font.'Segoe UI'
+                                                HoverBorderColor: =RGBA(16, 110, 190, 1)
+                                                HoverColor: =RGBA(50, 49, 48, 1)
+                                                HoverFill: =RGBA(255, 255, 255, 1)
+                                                MaxLength: =Parent.MaxLength
+                                                PaddingLeft: =5
+                                                PressedBorderColor: =RGBA(0, 120, 212, 1)
+                                                PressedColor: =RGBA(50, 49, 48, 1)
+                                                PressedFill: =RGBA(255, 255, 255, 1)
+                                                RadiusBottomLeft: =0
+                                                RadiusBottomRight: =0
+                                                RadiusTopLeft: =0
+                                                RadiusTopRight: =0
+                                                Tooltip: =Parent.DisplayName
+                                                Width: =Parent.Width - 60
+                                                X: =30
+                                                Y: =DataCardKey36.Y + DataCardKey36.Height + 5
+                                          - ErrorMessage33:
+                                              Control: Label@2.5.1
+                                              MetadataKey: ErrorMessage
+                                              Properties:
+                                                AutoHeight: =true
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                BorderStyle: =BorderStyle.None
+                                                BorderThickness: =2
+                                                Color: =RGBA(168, 0, 0, 1)
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(168, 0, 0, 1)
+                                                FocusedBorderThickness: =4
+                                                Font: =Font.'Segoe UI'
+                                                FontWeight: =FontWeight.Semibold
+                                                Height: =10
+                                                Live: =Live.Assertive
+                                                PaddingBottom: =0
+                                                PaddingLeft: =0
+                                                PaddingRight: =0
+                                                PaddingTop: =0
+                                                Text: =Parent.Error
+                                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                                Width: =Parent.Width - 60
+                                                X: =30
+                                                Y: =DataCardValue35.Y + DataCardValue35.Height
+                                          - StarVisible33:
+                                              Control: Label@2.5.1
+                                              MetadataKey: FieldRequired
+                                              Properties:
+                                                Align: =Align.Center
+                                                BorderColor: =RGBA(0, 0, 0, 0)
+                                                BorderStyle: =BorderStyle.None
+                                                BorderThickness: =2
+                                                Color: =RGBA(50, 49, 48, 1)
+                                                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                                DisabledColor: =RGBA(161, 159, 157, 1)
+                                                FocusedBorderThickness: =4
+                                                Font: =Font.'Segoe UI'
+                                                FontWeight: =FontWeight.Semibold
+                                                Height: =DataCardKey36.Height
+                                                PaddingLeft: =0
+                                                Text: ="*"
+                                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                                Width: =30
+                                                Wrap: =false
+                                                Y: =DataCardKey36.Y
+                  - DeleteConfirmDialogContainer8:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        FillPortions: =7
+                        LayoutDirection: =LayoutDirection.Vertical
+                        Visible: =If(deleteMode, true, false)
+                        Width: =0
+                      Children:
+                        - ConfirmDeletionLabel8:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              AlignInContainer: =AlignInContainer.Stretch
+                              BorderColor: =RGBA(0, 0, 0, 0)
+                              BorderStyle: =BorderStyle.None
+                              BorderThickness: =2
+                              Color: =RGBA(50, 49, 48, 1)
+                              DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                              DisabledColor: =RGBA(161, 159, 157, 1)
+                              FillPortions: =1
+                              FocusedBorderThickness: =4
+                              Font: =Font.'Segoe UI'
+                              Text: ="Are you sure you want to delete this record?"
+                        - ConfirmDeleteButtonBarContainer8:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              DropShadow: =DropShadow.None
+                              LayoutDirection: =LayoutDirection.Horizontal
+                              LayoutGap: =15
+                              LayoutJustifyContent: =LayoutJustifyContent.Center
+                              LayoutWrap: =true
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                            Children:
+                              - CancelDeleteButton8:
+                                  Control: Classic/Button@2.2.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderStyle: =BorderStyle.None
+                                    Color: =RGBA(255, 255, 255, 1)
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisabledColor: =RGBA(161, 159, 157, 1)
+                                    DisabledFill: =RGBA(242, 242, 241, 0)
+                                    Fill: =RGBA(0, 120, 212, 1)
+                                    Font: =Font.'Segoe UI'
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverColor: =RGBA(255, 255, 255, 1)
+                                    HoverFill: =RGBA(16, 110, 190, 1)
+                                    OnSelect: |-
+                                      =UpdateContext({ deleteMode: false, deleteCancelled: true })
+                                    PressedBorderColor: =RGBA(0, 69, 120, 1)
+                                    PressedColor: =RGBA(255, 255, 255, 1)
+                                    PressedFill: =RGBA(16, 110, 190, 1)
+                                    RadiusBottomLeft: =0
+                                    RadiusBottomRight: =0
+                                    RadiusTopLeft: =0
+                                    RadiusTopRight: =0
+                                    Text: ="Cancel"
+                              - ConfirmDeleteButton8:
+                                  Control: Classic/Button@2.2.0
+                                  Properties:
+                                    BorderColor: =RGBA(0, 0, 0, 0)
+                                    BorderStyle: =BorderStyle.None
+                                    Color: =RGBA(255, 255, 255, 1)
+                                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                                    DisabledColor: =RGBA(161, 159, 157, 1)
+                                    DisabledFill: =RGBA(242, 242, 241, 0)
+                                    Fill: =RGBA(0, 120, 212, 1)
+                                    Font: =Font.'Segoe UI'
+                                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                                    HoverColor: =RGBA(255, 255, 255, 1)
+                                    HoverFill: =RGBA(16, 110, 190, 1)
+                                    OnSelect: |-
+                                      =Remove([@Material], selectedRecord); If(IsEmpty(Errors([@Material], selectedRecord)), UpdateContext( { CurrentItem: First([@Material]), itemSelected: false, editMode: false, newMode: false, deleteMode: false }));
+                                    PressedBorderColor: =RGBA(0, 69, 120, 1)
+                                    PressedColor: =RGBA(255, 255, 255, 1)
+                                    PressedFill: =RGBA(16, 110, 190, 1)
+                                    RadiusBottomLeft: =0
+                                    RadiusBottomRight: =0
+                                    RadiusTopLeft: =0
+                                    RadiusTopRight: =0
+                                    Text: ="Delete"

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>crec6_purchaseorderselfservice_2c144</Name>
+  <AppVersion>2025-10-09T03:58:03Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.25095.12.0</CreatedByClientVersion>
+  <MinClientVersion>3.25095.12.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.25095.12","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>Purchase Order Hub</DisplayName>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"NotSpecified","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"Purchase Orders":{"entitySetName":"crec6_purchaseorders","logicalName":"crec6_purchaseorder"},"Purchase Order Lines":{"entitySetName":"crec6_purchaseorderlines","logicalName":"crec6_purchaseorderline"},"PO Item Databases":{"entitySetName":"new_poitemdatabases","logicalName":"new_poitemdatabase"},"Pool Group":{"entitySetName":"new_poolgroups","logicalName":"new_poolgroup"},"Catalog Group":{"entitySetName":"new_cataloggroups","logicalName":"new_cataloggroup"},"SPL Locations":{"entitySetName":"crec6_polocations","logicalName":"crec6_polocation"},"Pattern":{"entitySetName":"new_patterns","logicalName":"new_pattern"},"Material":{"entitySetName":"new_materials","logicalName":"new_material"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"crec6_purchaseorder","componenttype":1},{"logicalname":"crec6_purchaseorderline","componenttype":1},{"logicalname":"new_poitemdatabase","componenttype":1},{"logicalname":"new_poolgroup","componenttype":1},{"logicalname":"new_cataloggroup","componenttype":1},{"logicalname":"crec6_polocation","componenttype":1},{"logicalname":"new_pattern","componenttype":1},{"logicalname":"new_material","componenttype":1}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/crec6_purchaseorderselfservice_2c144_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/crec6_purchaseorderselfservice_2c144_DocumentUri.msapp</DocumentUri>
+  <AdditionalUris>
+    <AdditionalUri>/CanvasApps/crec6_purchaseorderselfservice_2c144_AdditionalUris0_identity.json</AdditionalUri>
+  </AdditionalUris>
+</CanvasApp>

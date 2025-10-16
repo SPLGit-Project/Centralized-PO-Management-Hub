@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{20a3cd87-b4f8-424a-9cd5-094466a1be45}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{5c918557-89b1-4caf-9c61-7175dfa6e76a}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c63b37a1-c1e7-4132-8487-c1cbbf9f1354}">
+                        <labels>
+                          <label description="ItemCode" languagecode="1033" />
+                        </labels>
+                        <control id="new_itemcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_itemcode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{13e216ca-7b8e-4852-bbfb-2e56f1ea37be}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a343522a-7364-453d-ba7a-a7501c0419b2}">
+                        <labels>
+                          <label description="SAPItemCode" languagecode="1033" />
+                        </labels>
+                        <control id="new_sapitemcode" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="new_sapitemcode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e27e8f81-797d-4003-899b-bc06db9f6267}">
+                        <labels>
+                          <label description="ItemName" languagecode="1033" />
+                        </labels>
+                        <control id="new_itemname" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="new_itemname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e7bbf41d-6d11-4f73-83dd-536ffc15f415}">
+                        <labels>
+                          <label description="ItemGroupCode" languagecode="1033" />
+                        </labels>
+                        <control id="new_itemgroupcode" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="new_itemgroupcode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c7bfbcc2-651e-49f5-b319-1f7c36f4be7b}">
+                        <labels>
+                          <label description="Pool" languagecode="1033" />
+                        </labels>
+                        <control id="new_pool" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="new_pool" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a0880431-0619-4d02-bd22-661424465b50}">
+                        <labels>
+                          <label description="Catalog" languagecode="1033" />
+                        </labels>
+                        <control id="new_catalog" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="new_catalog" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fbb24f4a-7c7c-476f-b437-2ffa705a97cc}">
+                        <labels>
+                          <label description="RFID" languagecode="1033" />
+                        </labels>
+                        <control id="new_rfid" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="new_rfid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c5013a91-0fcd-4794-a1e2-53f49d1f8fec}">
+                        <labels>
+                          <label description="IsActive" languagecode="1033" />
+                        </labels>
+                        <control id="new_isactive" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="new_isactive" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b73426ed-262a-4f23-9a7e-ca8376d9a276}">
+                        <labels>
+                          <label description="WeightSalesUnit" languagecode="1033" />
+                        </labels>
+                        <control id="new_weightsalesunit" classid="{c3efe0c3-0ec6-42be-8349-cbd9079dfd8e}" datafieldname="new_weightsalesunit" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{73c6fc1c-476f-4d93-bfa7-925ce01641e7}">
+                        <labels>
+                          <label description="WeightPurchaseUnit" languagecode="1033" />
+                        </labels>
+                        <control id="new_weightpurchaseunit" classid="{c3efe0c3-0ec6-42be-8349-cbd9079dfd8e}" datafieldname="new_weightpurchaseunit" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5a030bf0-9440-4cc3-8698-cbced4799560}">
+                        <labels>
+                          <label description="ForeignName" languagecode="1033" />
+                        </labels>
+                        <control id="new_foreignname" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="new_foreignname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{114a3a81-eadc-4905-a532-9ab851216366}">
+                        <labels>
+                          <label description="Measurements" languagecode="1033" />
+                        </labels>
+                        <control id="new_measurements" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="new_measurements" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0c3d6225-787f-44a2-88b8-5615d1b761e7}">
+                        <labels>
+                          <label description="Comment" languagecode="1033" />
+                        </labels>
+                        <control id="new_comment" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="new_comment" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8d7fe824-2a42-4b15-a693-4c0f9afed731}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="ItemGroupName" languagecode="1033" />
+                        </labels>
+                        <control id="new_itemgroupname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="new_itemgroupname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{86e1b8fa-3b03-443d-8c97-04550ab4eda6}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Colour" languagecode="1033" />
+                        </labels>
+                        <control id="crec6_colour" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="crec6_colour" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{85019e2d-53fe-4c07-adef-44c5b68680e5}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Material" languagecode="1033" />
+                        </labels>
+                        <control id="crec6_material" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="crec6_material" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ebca3606-5b7a-44a1-90f4-984c68f0fe31}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Pattern" languagecode="1033" />
+                        </labels>
+                        <control id="crec6_pattern" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="crec6_pattern" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{780b1fcc-de81-47bc-b9fd-88ac4354b7b6}" locklevel="0" rowspan="1" colspan="1">
+                        <labels>
+                          <label description="Size" languagecode="1033" />
+                        </labels>
+                        <control id="crec6_size" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="crec6_size" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{8e61abde-92b2-45f1-bc53-5dd962fb9347}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{edf03cb8-e427-46b8-aad2-398a2530af1a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{527a7563-c6b3-4118-8d61-4adb730f0641}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c8f2fe54-ccd6-4937-b49c-a7e1eb0e9d66}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{017931c2-bf4a-40c2-9a9b-63491b9f1c31}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{ab9f0c69-fb8d-4b63-a1a8-7ef2bb1e8f12}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{668190af-1088-4bf4-91b4-aacb4e6ad258}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c061ab75-2662-415b-a8f5-900f22c36227}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

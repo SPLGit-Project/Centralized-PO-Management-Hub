@@ -1,0 +1,95 @@
+{
+  "name": "Purchase Order Self-Service",
+  "description": "For purchasers to create, manage, save, clone, and track orders, add items, attach files, and view live PO status.",
+  "typesOfUsers": [
+    "Purchaser"
+  ],
+  "tableSchemaNames": [
+    "crec6_PurchaseOrder",
+    "crec6_PurchaseOrderLine",
+    "new_POItemDatabase",
+    "new_poolgroup",
+    "new_cataloggroup",
+    "crec6_POLocation",
+    "new_pattern",
+    "new_material"
+  ],
+  "userStories": [
+    {
+      "id": "us01",
+      "description": "Create a new purchase order so that I can request procurement of required items.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us02",
+      "description": "Search and filter products by Pool Group, Catalog, or RFID so that I can quickly find items for my purchase order.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us03",
+      "description": "Add multiple products to a purchase order so that I can request all needed items at once.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us04",
+      "description": "Submit a purchase order for approval so that procurement can proceed.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us05",
+      "description": "Track the status of my purchase orders so that I know where they are in the approval and fulfillment process.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us06",
+      "description": "Receive notifications when my purchase order status changes so that I am updated in real time.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us26",
+      "description": "Add multiple items to a purchase order with specified quantity, price, and automatically calculated total so that I can accurately capture procurement needs.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us27",
+      "description": "Search for items by Pool, Catalog, or RFID so that I can quickly locate and select products for my purchase order.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us28",
+      "description": "Attach files, such as specifications or vendor quotes, to my purchase order so that supporting documentation is included.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us29",
+      "description": "Save purchase order drafts so that I can complete or submit them at a later time.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us30",
+      "description": "Clone previous purchase orders so that I can quickly create similar requests without re-entering all details.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us31",
+      "description": "Set delivery date and location for each purchase order so that items arrive as needed at the correct place.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us32",
+      "description": "See live status and review comments associated with my purchase orders so that I am always updated on progress or required actions.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us33",
+      "description": "Receive alerts via email or Microsoft Teams when my purchase order is approved or rejected so that I am notified immediately.",
+      "userType": "Purchaser"
+    },
+    {
+      "id": "us34",
+      "description": "Be prevented from adding inactive or obsolete items to my purchase order so that only valid items are requested.",
+      "userType": "Purchaser"
+    }
+  ],
+  "version": 1
+}

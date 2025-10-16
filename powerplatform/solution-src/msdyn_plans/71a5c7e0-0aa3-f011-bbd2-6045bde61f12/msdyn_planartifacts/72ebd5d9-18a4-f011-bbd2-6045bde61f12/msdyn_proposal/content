@@ -1,0 +1,24 @@
+{
+  "name": "Purchase Order Audit Trends",
+  "description": "Managers review PO history and actions for compliance and accountability using interactive audit dashboards.",
+  "typesOfUsers": [
+    "Procurement manager"
+  ],
+  "tableSchemaNames": [
+    "crec6_PurchaseOrder",
+    "crec6_PurchaseOrderLine"
+  ],
+  "userStories": [
+    {
+      "id": "us13",
+      "description": "Review audit logs of procurement activities so that compliance and accountability are maintained.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us25",
+      "description": "Maintain audit logs for all purchase order actions so that compliance and accountability are ensured.",
+      "userType": "Procurement manager"
+    }
+  ],
+  "version": 1
+}

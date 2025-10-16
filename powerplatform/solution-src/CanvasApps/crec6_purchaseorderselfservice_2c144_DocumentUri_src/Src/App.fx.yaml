@@ -1,0 +1,12 @@
+App As appinfo:
+    BackEnabled: =true
+    StartScreen: ='Welcome screen'
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

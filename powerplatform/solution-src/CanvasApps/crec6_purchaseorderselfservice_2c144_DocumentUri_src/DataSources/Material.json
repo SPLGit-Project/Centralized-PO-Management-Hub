@@ -1,0 +1,95 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "new_materials",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "new_material",
+    "Name": "Material",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "crec6_new_poitemdatabase_Material_new_material": "PO Item Databases",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "new_material_AsyncOperations": "System Jobs",
+      "new_material_BulkDeleteFailures": "Bulk Delete Failures",
+      "new_material_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "new_material_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "new_material_ProcessSession": "Process Sessions",
+      "new_material_SyncErrors": "Sync Errors",
+      "new_materialid": "Material",
+      "new_materialname": "Material Name",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Material",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Material (Views)",
+    "Name": "_new_material_views",
+    "RelatedEntityName": "Material",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1b4647cc-3007-4483-baa5-286a0b7cd29e": "Material Advanced Find View",
+      "51e2cb8b-f825-4661-8afe-53f8b0ddef97": "Material Lookup View",
+      "6e30a75c-833a-454f-a2e8-8bef1287008a": "Material Associated View",
+      "b1a2910f-ccc8-4d2f-a611-b47d14d5fb03": "Inactive Material",
+      "c5889774-bea2-4d22-9535-c3f722a1dae4": "Active Material"
+    }
+  },
+  {
+    "DisplayName": "Status (Material)",
+    "Name": "new_material_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Material"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Material",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Material)",
+    "Name": "new_material_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Material"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Material",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "new_poitemdatabases",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "new_poitemdatabase",
+    "Name": "PO Item Databases",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "crec6_Colour": "Colour",
+      "crec6_Material": "Material",
+      "crec6_Pattern": "Pattern",
+      "crec6_Size": "Size",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "new_Catalog": "Catalog",
+      "new_comment": "Comment",
+      "new_foreignname": "ForeignName",
+      "new_isactive": "IsActive",
+      "new_itemcode": "ItemCode",
+      "new_itemgroupcode": "ItemGroupCode",
+      "new_itemgroupname": "ItemGroupName",
+      "new_itemname": "ItemName",
+      "new_measurements": "Measurements",
+      "new_poitemdatabase_AsyncOperations": "System Jobs",
+      "new_poitemdatabase_BulkDeleteFailures": "Bulk Delete Failures",
+      "new_poitemdatabase_DuplicateBaseRecord": "Duplicate Records (new_poitemdatabase_DuplicateBaseRecord)",
+      "new_poitemdatabase_DuplicateMatchingRecord": "Duplicate Records (new_poitemdatabase_DuplicateMatchingRecord)",
+      "new_poitemdatabase_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "new_poitemdatabase_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "new_poitemdatabase_ProcessSession": "Process Sessions",
+      "new_poitemdatabase_SyncErrors": "Sync Errors",
+      "new_poitemdatabaseid": "PO Item Database",
+      "new_Pool": "Pool",
+      "new_remarks": "Remarks",
+      "new_rfid": "RFID",
+      "new_sapitemcode": "SAPItemCode",
+      "new_weightpurchaseunit": "WeightPurchaseUnit",
+      "new_weightsalesunit": "WeightSalesUnit",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "PO Item Databases",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "PO Item Databases (Views)",
+    "Name": "_new_poitemdatabase_views",
+    "RelatedEntityName": "PO Item Databases",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "043a5dec-1f4f-4fd1-9322-04b1551bdbd8": "PO Item Database Lookup View",
+      "1a36031e-a8e5-47e2-b6c9-75e93dd8995f": "PO Item Database Advanced Find View",
+      "41103851-1898-418d-b2b8-78f01abea4dd": "Active Purchase Items Databases",
+      "72968915-6a8b-41f7-8716-09cc2fe56ce4": "PO Item Database Associated View",
+      "87b0294f-9ce3-403a-9462-5e9952252857": "Inactive PO Item Databases"
+    }
+  },
+  {
+    "DisplayName": "IsActive (PO Item Databases)",
+    "Name": "new_poitemdatabase_new_isactive",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "new_isactive",
+        "OptionSetReferenceEntityName": "PO Item Databases"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "new_isactive",
+    "RelatedEntityName": "PO Item Databases",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "RFID (PO Item Databases)",
+    "Name": "new_poitemdatabase_new_rfid",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "new_rfid",
+        "OptionSetReferenceEntityName": "PO Item Databases"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "new_rfid",
+    "RelatedEntityName": "PO Item Databases",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (PO Item Databases)",
+    "Name": "new_poitemdatabase_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "PO Item Databases"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "PO Item Databases",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (PO Item Databases)",
+    "Name": "new_poitemdatabase_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "PO Item Databases"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "PO Item Databases",
+    "Type": "OptionSetInfo"
+  }
+]

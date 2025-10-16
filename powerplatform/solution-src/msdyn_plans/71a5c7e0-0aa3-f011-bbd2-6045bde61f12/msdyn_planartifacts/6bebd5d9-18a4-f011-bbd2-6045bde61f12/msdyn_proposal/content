@@ -1,0 +1,25 @@
+{
+  "name": "Procurement Analytics",
+  "description": "Procurement managers track supplier spend, approval cycles, and order status with insightful, filterable dashboards.",
+  "typesOfUsers": [
+    "Procurement manager"
+  ],
+  "tableSchemaNames": [
+    "crec6_PurchaseOrder",
+    "crec6_PurchaseOrderLine",
+    "crec6_Supplier"
+  ],
+  "userStories": [
+    {
+      "id": "us12",
+      "description": "View analytics dashboards to analyze spend by supplier, approval times, and order status so that I can make informed decisions.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us23",
+      "description": "View dashboards filtered by status, supplier and spend so that procurement insights and trends can be monitored.",
+      "userType": "Procurement manager"
+    }
+  ],
+  "version": 1
+}

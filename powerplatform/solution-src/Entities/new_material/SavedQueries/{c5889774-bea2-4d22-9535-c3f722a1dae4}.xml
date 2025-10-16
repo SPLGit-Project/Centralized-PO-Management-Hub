@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{c5889774-bea2-4d22-9535-c3f722a1dae4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_materialname" select="1" icon="1" preview="1">
+        <row name="result" id="new_materialid">
+          <cell name="new_materialname" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_material">
+          <attribute name="new_materialid" />
+          <attribute name="new_materialname" />
+          <attribute name="createdon" />
+          <order attribute="new_materialname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Material" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>crec6_ProcurementMa46e6be38</SiteMapUniqueName>
+  <EnableCollapsibleGroups>True</EnableCollapsibleGroups>
+  <ShowHome>True</ShowHome>
+  <ShowPinned>True</ShowPinned>
+  <ShowRecents>True</ShowRecents>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area Id="area_65a755bb" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Area1" />
+      </Titles>
+      <Group Id="Main_Group" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Main" />
+        </Titles>
+        <SubArea Id="subarea_11ceaa9d" VectorIcon="/_imgs/TableIconsFluentV9/receipt.svg" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="crec6_purchaseorder" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_211f9882" VectorIcon="/_imgs/TableIconsFluentV9/document_text.svg" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="crec6_purchaseorderline" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_257e18e5" VectorIcon="/WebResources/mspp_entity_lists.svg" Icon="/WebResources/mspp_entity_lists.svg" Entity="new_poitemdatabase" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Item Database" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="settings_group" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Settings" />
+        </Titles>
+        <SubArea Id="subarea_5a823b5d" VectorIcon="/_imgs/TableIconsFluentV9/location.svg" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="crec6_polocation" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_fe5375e0" VectorIcon="/_imgs/TableIconsFluentV9/people.svg" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="crec6_supplier" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_5d0ddd3f" VectorIcon="/WebResources/mspcat_/box_24_regular.svg" Icon="/WebResources/mspcat_/box_24_regular.svg" Entity="new_poolgroup" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_c1f1298a" VectorIcon="/WebResources/ProductCatalog.svg" Icon="/WebResources/ProductCatalog.svg" Entity="new_cataloggroup" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_778ae6ca" VectorIcon="/WebResources/msdyn_/imgs/CustomActions/SpecifyPattern.svg" Icon="/WebResources/msdyn_/imgs/CustomActions/SpecifyPattern.svg" Entity="new_pattern" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_981876c5" VectorIcon="/WebResources/adx_publishing_state_transition_rules.svg" Icon="/WebResources/adx_publishing_state_transition_rules.svg" Entity="new_material" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="Procurement Manager Hub" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

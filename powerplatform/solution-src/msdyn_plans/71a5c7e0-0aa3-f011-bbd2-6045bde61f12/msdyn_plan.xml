@@ -1,0 +1,45 @@
+<msdyn_plan msdyn_planid="71a5c7e0-0aa3-f011-bbd2-6045bde61f12">
+  <iscustomizable>1</iscustomizable>
+  <msdyn_content mimetype="application/octet-stream">content</msdyn_content>
+  <msdyn_contentschemaversion>1.1</msdyn_contentschemaversion>
+  <msdyn_description>This solution enables SPL Services to manage procurement, product catalogs, approvals, and PO lifecycle efficiently with data-driven insights.</msdyn_description>
+  <msdyn_languagecode>1033</msdyn_languagecode>
+  <msdyn_name>Centralized PO Management Hub</msdyn_name>
+  <msdyn_prompt>Our organization (SPL Services) needs a centralized Purchase Order Management System to manage product catalogs, procurement requests, approvals, and tracking — all built on Microsoft Power Apps and Dataverse.
+
+The solution should:
+1. Centralize Item &amp; Product Data
+Use a main table called PO Item Database with attributes like ItemCode, ItemName, RFID, WeightPurchaseUnit, WeightSalesUnit, Remarks, and ForeignName.
+Connect to lookup tables for Pool Group, Catalog Group, Colour, Pattern, Material, and Size.
+Allow linking items to multiple Colour, Material, Pattern, and Size entries through intermediate (join) tables like ItemColour, ItemMaterial, ItemPattern, and ItemSize.
+2. Manage the Procurement Lifecycle
+Include tables for Purchase Orders, Purchase Order Lines, Suppliers, Locations, and Status Tracking.
+Purchase Orders should move through these stages: Draft → Submitted → Approved → Ordered → Received → Closed.
+Line items link to PO Item Database records.
+3. Provide Two Integrated Power Apps:
+A Canvas App (called SPL – PO Manager) for staff to:
+Create new purchase orders
+Search and filter products by Pool, Catalog, or RFID
+Add multiple items to a PO
+Submit for approval and track status
+A Model-Driven App (called SPL – Procurement Inventory Manager) for procurement staff to:
+Maintain the product catalog and lookup data
+Approve submitted purchase orders
+Manage suppliers, update item details, and track deliveries.
+4. Automate Approvals &amp; Notifications
+Create a Power Automate flow that triggers when a Purchase Order is submitted.
+Sends approval requests to the Finance Approver group.
+On approval, updates the PO status and sends notifications to the requester.
+Logs actions (who approved, when, and comments) in an Audit Log table.
+5. Role-Based Permissions
+Purchaser: Can create and view their own POs.
+Procurement Manager: Can edit all items, approve requests, and manage catalogs.
+Finance Approver: Can review and approve submitted POs only.
+6. Scalability &amp; Reporting
+Built on Dataverse for future integration with Power BI and SharePoint.
+Include a sample dashboard showing POs by status, spend by supplier, and average approval time.
+Please use the above structure as the foundation.
+Generate a complete Copilot plan with a clear business problem, purpose, user roles, data model, apps, and flows, ready for extension using the existing Dataverse tables in the SPL-PO-Manager solution.</msdyn_prompt>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</msdyn_plan>

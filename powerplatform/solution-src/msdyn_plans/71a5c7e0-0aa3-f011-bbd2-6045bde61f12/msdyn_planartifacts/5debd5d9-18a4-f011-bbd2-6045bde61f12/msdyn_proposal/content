@@ -1,0 +1,76 @@
+{
+  "name": "Finance Approvals Center",
+  "description": "For finance team to review, approve, comment, delegate, and annotate POs, ensuring compliance with policies and budgets.",
+  "typesOfUsers": [
+    "Finance approver"
+  ],
+  "tableSchemaNames": [
+    "crec6_PurchaseOrder",
+    "crec6_PurchaseOrderLine",
+    "crec6_Supplier",
+    "crec6_POLocation"
+  ],
+  "userStories": [
+    {
+      "id": "us14",
+      "description": "Receive approval requests when purchase orders are submitted so that I can review them promptly.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us15",
+      "description": "Approve or reject submitted purchase orders so that financial oversight is ensured.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us16",
+      "description": "Add approval comments so that decisions are documented for record keeping.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us17",
+      "description": "View the history and comments of purchase orders so that I have context for my approvals.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us18",
+      "description": "Receive notifications when a purchase order requires my attention so that I do not miss critical approval tasks.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us35",
+      "description": "Review purchase order header and line details so that I can ensure accuracy before making a decision.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us36",
+      "description": "See all supporting attachments for a purchase order so that I can make informed decisions on approvals.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us37",
+      "description": "Approve, reject, or return purchase orders with clear comments so that decisions are communicated and documented.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us38",
+      "description": "Delegate or escalate approval tasks to another finance approver if a request is overdue so that approvals are not delayed.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us39",
+      "description": "Add finance notes to purchase orders so that financial considerations are documented for reference.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us40",
+      "description": "Ensure purchase orders comply with budget constraints so that financial policies are followed.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us41",
+      "description": "Receive alerts for pending or escalated approvals so that I can promptly address urgent purchase order tasks.",
+      "userType": "Finance approver"
+    }
+  ],
+  "version": 1
+}

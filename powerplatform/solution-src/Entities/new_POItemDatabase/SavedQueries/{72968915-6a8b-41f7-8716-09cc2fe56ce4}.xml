@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{72968915-6a8b-41f7-8716-09cc2fe56ce4}</savedqueryid>
+    <layoutxml>
+      <grid name="new_poitemdatabases" jump="new_itemcode" select="1" icon="1" preview="1">
+        <row name="new_poitemdatabase" id="new_poitemdatabaseid">
+          <cell name="new_itemcode" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="new_measurements" width="122" />
+          <cell name="new_isactive" width="100" />
+          <cell name="new_itemgroupname" width="135" />
+          <cell name="new_sapitemcode" width="121" />
+          <cell name="new_itemname" width="100" />
+          <cell name="new_catalog" width="100" />
+          <cell name="new_pool" width="100" />
+          <cell name="new_rfid" width="100" />
+          <cell name="new_weightsalesunit" width="135" />
+          <cell name="new_weightpurchaseunit" width="156" />
+          <cell name="new_remarks" width="100" />
+          <cell name="crec6_colour" width="100" />
+          <cell name="crec6_material" width="100" />
+          <cell name="crec6_pattern" width="100" />
+          <cell name="crec6_size" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_poitemdatabase">
+          <attribute name="new_poitemdatabaseid" />
+          <attribute name="new_itemcode" />
+          <attribute name="createdon" />
+          <order attribute="new_itemcode" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_measurements" />
+          <attribute name="new_isactive" />
+          <attribute name="new_itemgroupname" />
+          <attribute name="new_sapitemcode" />
+          <attribute name="new_itemname" />
+          <attribute name="new_catalog" />
+          <attribute name="new_pool" />
+          <attribute name="new_rfid" />
+          <attribute name="new_weightsalesunit" />
+          <attribute name="new_weightpurchaseunit" />
+          <attribute name="new_remarks" />
+          <attribute name="crec6_colour" />
+          <attribute name="crec6_material" />
+          <attribute name="crec6_pattern" />
+          <attribute name="crec6_size" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="PO Item Database Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

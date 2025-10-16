@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_crec6_polocation" />
+  <EntityRelationship Name="business_unit_new_clothingsize" />
+  <EntityRelationship Name="business_unit_new_colour" />
+  <EntityRelationship Name="business_unit_new_material" />
+  <EntityRelationship Name="business_unit_new_pattern" />
+  <EntityRelationship Name="crec6_new_poitemdatabase_Colour_new_colour" />
+  <EntityRelationship Name="crec6_new_poitemdatabase_Material_new_material" />
+  <EntityRelationship Name="crec6_new_poitemdatabase_Pattern_new_pattern" />
+  <EntityRelationship Name="crec6_new_poitemdatabase_Size_new_clothingsize" />
+  <EntityRelationship Name="lk_crec6_polocation_createdby" />
+  <EntityRelationship Name="lk_crec6_polocation_modifiedby" />
+  <EntityRelationship Name="lk_new_clothingsize_createdby" />
+  <EntityRelationship Name="lk_new_clothingsize_modifiedby" />
+  <EntityRelationship Name="lk_new_colour_createdby" />
+  <EntityRelationship Name="lk_new_colour_modifiedby" />
+  <EntityRelationship Name="lk_new_material_createdby" />
+  <EntityRelationship Name="lk_new_material_modifiedby" />
+  <EntityRelationship Name="lk_new_pattern_createdby" />
+  <EntityRelationship Name="lk_new_pattern_modifiedby" />
+  <EntityRelationship Name="owner_crec6_polocation" />
+  <EntityRelationship Name="owner_new_clothingsize" />
+  <EntityRelationship Name="owner_new_colour" />
+  <EntityRelationship Name="owner_new_material" />
+  <EntityRelationship Name="owner_new_pattern" />
+  <EntityRelationship Name="team_crec6_polocation" />
+  <EntityRelationship Name="team_new_clothingsize" />
+  <EntityRelationship Name="team_new_colour" />
+  <EntityRelationship Name="team_new_material" />
+  <EntityRelationship Name="team_new_pattern" />
+  <EntityRelationship Name="user_crec6_polocation" />
+  <EntityRelationship Name="user_new_clothingsize" />
+  <EntityRelationship Name="user_new_colour" />
+  <EntityRelationship Name="user_new_material" />
+  <EntityRelationship Name="user_new_pattern" />
+</EntityRelationships>

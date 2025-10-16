@@ -1,0 +1,96 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "new_poolgroups",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "new_poolgroup",
+    "Name": "Pool Group",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "new_poitemdatabase_new_pool_new_poolgroup": "PO Item Databases",
+      "new_poolgroup_AsyncOperations": "System Jobs",
+      "new_poolgroup_BulkDeleteFailures": "Bulk Delete Failures",
+      "new_poolgroup_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "new_poolgroup_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "new_poolgroup_ProcessSession": "Process Sessions",
+      "new_poolgroup_SyncErrors": "Sync Errors",
+      "new_poolgroupcode": "PoolGroupCode",
+      "new_poolgroupid": "Pool Group",
+      "new_poolgroupname": "PoolGroupName",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Pool Group",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Pool Group (Views)",
+    "Name": "_new_poolgroup_views",
+    "RelatedEntityName": "Pool Group",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "008efff5-f8c8-4883-b98a-109bbf52b47a": "Pool Group Advanced Find View",
+      "0f6e9534-2949-45a8-883e-bf9c93e441e1": "Inactive Pool Group",
+      "1211f295-55a5-43f2-b60b-2b292594cbfd": "Pool Group Associated View",
+      "71625989-11dd-4c17-8130-dc08d8b4b1c3": "Pool Groups",
+      "fca6a160-f62b-4ef9-b3f9-b552a7b3ac8d": "Pool Group Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Pool Group)",
+    "Name": "new_poolgroup_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Pool Group"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Pool Group",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Pool Group)",
+    "Name": "new_poolgroup_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Pool Group"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Pool Group",
+    "Type": "OptionSetInfo"
+  }
+]

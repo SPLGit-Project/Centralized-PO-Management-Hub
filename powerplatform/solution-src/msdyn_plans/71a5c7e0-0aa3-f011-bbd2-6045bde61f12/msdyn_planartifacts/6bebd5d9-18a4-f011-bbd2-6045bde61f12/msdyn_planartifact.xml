@@ -1,0 +1,12 @@
+<msdyn_planartifact msdyn_planartifactid="6bebd5d9-18a4-f011-bbd2-6045bde61f12">
+  <iscustomizable>1</iscustomizable>
+  <msdyn_artifactmetadataschemaversion>1.0</msdyn_artifactmetadataschemaversion>
+  <msdyn_artifactstatus>419550000</msdyn_artifactstatus>
+  <msdyn_description>Procurement managers track supplier spend, approval cycles, and order status with insightful, filterable dashboards.</msdyn_description>
+  <msdyn_name>Procurement Analytics</msdyn_name>
+  <msdyn_proposal mimetype="application/octet-stream">content</msdyn_proposal>
+  <msdyn_proposalschemaversion>1.0</msdyn_proposalschemaversion>
+  <msdyn_type>PowerBIReport</msdyn_type>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</msdyn_planartifact>

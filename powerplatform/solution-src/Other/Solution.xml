@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.25094.157" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25094.157" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25094.00157">
+  <SolutionManifest>
+    <UniqueName>CentralizedPOManagementHub</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Centralized PO Management Hub" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>Cr6f6d5</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="CDS Default Publisher" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>crec6</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>94163</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="crec6_polocation" behavior="0" />
+      <RootComponent type="1" schemaName="new_clothingsize" behavior="0" />
+      <RootComponent type="1" schemaName="new_colour" behavior="0" />
+      <RootComponent type="1" schemaName="new_material" behavior="0" />
+      <RootComponent type="1" schemaName="new_pattern" behavior="0" />
+      <RootComponent type="1" schemaName="new_poitemdatabase" behavior="1" />
+      <RootComponent type="1" schemaName="new_poolgroup" behavior="1" />
+      <RootComponent type="300" schemaName="crec6_purchaseorderselfservice_2c144" behavior="0" />
+      <RootComponent type="61" schemaName="crec6_SPLProcurement" behavior="0" />
+      <RootComponent type="62" schemaName="crec6_ProcurementMa46e6be38" behavior="0" />
+      <RootComponent type="62" schemaName="crec6_ProcurementMaa2433484" behavior="0" />
+      <RootComponent type="80" schemaName="crec6_ProcurementMa254df74c" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="crec6_poheader" displayName="PO Header" solution="Active" />
+        <Dependent type="1" schemaName="crec6_polocation" displayName="SPL Locations" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="crec6_purchaseorder" displayName="Purchase Order" solution="Active" />
+        <Dependent type="300" schemaName="crec6_purchaseorderselfservice_2c144" displayName="Purchase Order Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="crec6_purchaseorder" displayName="Purchase Order" solution="Active" />
+        <Dependent type="62" schemaName="crec6_ProcurementMa46e6be38" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="crec6_purchaseorder" displayName="Purchase Order" solution="Active" />
+        <Dependent type="62" schemaName="crec6_ProcurementMaa2433484" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="crec6_purchaseorder" displayName="Purchase Order" solution="Active" />
+        <Dependent type="80" schemaName="crec6_ProcurementMa254df74c" displayName="Procurement Manager Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="crec6_purchaseorderline" displayName="Purchase Order Line" solution="Active" />
+        <Dependent type="300" schemaName="crec6_purchaseorderselfservice_2c144" displayName="Purchase Order Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="crec6_purchaseorderline" displayName="Purchase Order Line" solution="Active" />
+        <Dependent type="62" schemaName="crec6_ProcurementMa46e6be38" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="crec6_purchaseorderline" displayName="Purchase Order Line" solution="Active" />
+        <Dependent type="62" schemaName="crec6_ProcurementMaa2433484" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="crec6_purchaseorderline" displayName="Purchase Order Line" solution="Active" />
+        <Dependent type="80" schemaName="crec6_ProcurementMa254df74c" displayName="Procurement Manager Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="crec6_supplier" displayName="Supplier" solution="Active" />
+        <Dependent type="62" schemaName="crec6_ProcurementMa46e6be38" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="crec6_supplier" displayName="Supplier" solution="Active" />
+        <Dependent type="62" schemaName="crec6_ProcurementMaa2433484" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="crec6_supplier" displayName="Supplier" solution="Active" />
+        <Dependent type="80" schemaName="crec6_ProcurementMa254df74c" displayName="Procurement Manager Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="new_cataloggroup" displayName="Catalog Group" solution="Active" />
+        <Dependent type="300" schemaName="crec6_purchaseorderselfservice_2c144" displayName="Purchase Order Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="new_cataloggroup" displayName="Catalog Group" solution="Active" />
+        <Dependent type="62" schemaName="crec6_ProcurementMa46e6be38" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="new_cataloggroup" displayName="Catalog Group" solution="Active" />
+        <Dependent type="62" schemaName="crec6_ProcurementMaa2433484" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="new_cataloggroup" displayName="Catalog Group" solution="Active" />
+        <Dependent type="80" schemaName="crec6_ProcurementMa254df74c" displayName="Procurement Manager Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="new_poitemdatabase" displayName="PO Item Database" solution="Active" />
+        <Dependent type="1" schemaName="new_poitemdatabase" displayName="PO Item Database" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="new_poolgroup" displayName="Pool Group" solution="Active" />
+        <Dependent type="1" schemaName="new_poolgroup" displayName="Pool Group" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="new_poitemdatabase_new_catalog_new_cataloggroup" displayName="new_poitemdatabase_new_catalog_new_cataloggroup" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="new_poitemdatabase_new_pool_new_poolgroup" displayName="new_poitemdatabase_new_pool_new_poolgroup" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Advanced Find View" displayName="PO Item Database Advanced Find View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{1a36031e-a8e5-47e2-b6c9-75e93dd8995f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="new_poolgroup" parentDisplayName="Pool Group" solution="Active" />
+        <Dependent type="26" schemaName="Pool Groups" displayName="Pool Groups" parentSchemaName="new_poolgroup" parentDisplayName="Pool Group" id="{71625989-11dd-4c17-8130-dc08d8b4b1c3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_catalog" displayName="Catalog" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Advanced Find View" displayName="PO Item Database Advanced Find View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{1a36031e-a8e5-47e2-b6c9-75e93dd8995f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_catalog" displayName="Catalog" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_catalog" displayName="Catalog" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_catalog" displayName="Catalog" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_catalog" displayName="Catalog" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_catalog" displayName="Catalog" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_comment" displayName="Comment" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_comment" displayName="Comment" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_foreignname" displayName="ForeignName" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_foreignname" displayName="ForeignName" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_isactive" displayName="IsActive" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Advanced Find View" displayName="PO Item Database Advanced Find View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{1a36031e-a8e5-47e2-b6c9-75e93dd8995f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_isactive" displayName="IsActive" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_isactive" displayName="IsActive" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_isactive" displayName="IsActive" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_isactive" displayName="IsActive" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_isactive" displayName="IsActive" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemcode" displayName="ItemCode" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Advanced Find View" displayName="PO Item Database Advanced Find View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{1a36031e-a8e5-47e2-b6c9-75e93dd8995f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemcode" displayName="ItemCode" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemcode" displayName="ItemCode" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemcode" displayName="ItemCode" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemcode" displayName="ItemCode" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemcode" displayName="ItemCode" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemgroupcode" displayName="ItemGroupCode" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemgroupcode" displayName="ItemGroupCode" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemgroupname" displayName="ItemGroupName" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Advanced Find View" displayName="PO Item Database Advanced Find View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{1a36031e-a8e5-47e2-b6c9-75e93dd8995f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemgroupname" displayName="ItemGroupName" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemgroupname" displayName="ItemGroupName" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemgroupname" displayName="ItemGroupName" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemgroupname" displayName="ItemGroupName" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemgroupname" displayName="ItemGroupName" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemname" displayName="ItemName" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Advanced Find View" displayName="PO Item Database Advanced Find View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{1a36031e-a8e5-47e2-b6c9-75e93dd8995f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemname" displayName="ItemName" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemname" displayName="ItemName" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemname" displayName="ItemName" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemname" displayName="ItemName" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_itemname" displayName="ItemName" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_measurements" displayName="Measurements" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Advanced Find View" displayName="PO Item Database Advanced Find View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{1a36031e-a8e5-47e2-b6c9-75e93dd8995f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_measurements" displayName="Measurements" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_measurements" displayName="Measurements" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_measurements" displayName="Measurements" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_measurements" displayName="Measurements" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_measurements" displayName="Measurements" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_poitemdatabaseid" displayName="PO Item Database" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Advanced Find View" displayName="PO Item Database Advanced Find View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{1a36031e-a8e5-47e2-b6c9-75e93dd8995f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_poitemdatabaseid" displayName="PO Item Database" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_poitemdatabaseid" displayName="PO Item Database" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_poitemdatabaseid" displayName="PO Item Database" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_poitemdatabaseid" displayName="PO Item Database" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_pool" displayName="Pool" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Advanced Find View" displayName="PO Item Database Advanced Find View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{1a36031e-a8e5-47e2-b6c9-75e93dd8995f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_pool" displayName="Pool" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_pool" displayName="Pool" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_pool" displayName="Pool" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_pool" displayName="Pool" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_pool" displayName="Pool" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_poolgroupcode" displayName="PoolGroupCode" parentSchemaName="new_poolgroup" parentDisplayName="Pool Group" solution="Active" />
+        <Dependent type="26" schemaName="Pool Groups" displayName="Pool Groups" parentSchemaName="new_poolgroup" parentDisplayName="Pool Group" id="{71625989-11dd-4c17-8130-dc08d8b4b1c3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_poolgroupid" displayName="Pool Group" parentSchemaName="new_poolgroup" parentDisplayName="Pool Group" solution="Active" />
+        <Dependent type="26" schemaName="Pool Groups" displayName="Pool Groups" parentSchemaName="new_poolgroup" parentDisplayName="Pool Group" id="{71625989-11dd-4c17-8130-dc08d8b4b1c3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_poolgroupname" displayName="PoolGroupName" parentSchemaName="new_poolgroup" parentDisplayName="Pool Group" solution="Active" />
+        <Dependent type="26" schemaName="Pool Groups" displayName="Pool Groups" parentSchemaName="new_poolgroup" parentDisplayName="Pool Group" id="{71625989-11dd-4c17-8130-dc08d8b4b1c3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_remarks" displayName="Remarks" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Advanced Find View" displayName="PO Item Database Advanced Find View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{1a36031e-a8e5-47e2-b6c9-75e93dd8995f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_remarks" displayName="Remarks" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_remarks" displayName="Remarks" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_remarks" displayName="Remarks" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_remarks" displayName="Remarks" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_rfid" displayName="RFID" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Advanced Find View" displayName="PO Item Database Advanced Find View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{1a36031e-a8e5-47e2-b6c9-75e93dd8995f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_rfid" displayName="RFID" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_rfid" displayName="RFID" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_rfid" displayName="RFID" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_rfid" displayName="RFID" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_rfid" displayName="RFID" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_sapitemcode" displayName="SAPItemCode" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Advanced Find View" displayName="PO Item Database Advanced Find View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{1a36031e-a8e5-47e2-b6c9-75e93dd8995f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_sapitemcode" displayName="SAPItemCode" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_sapitemcode" displayName="SAPItemCode" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_sapitemcode" displayName="SAPItemCode" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_sapitemcode" displayName="SAPItemCode" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_sapitemcode" displayName="SAPItemCode" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_weightpurchaseunit" displayName="WeightPurchaseUnit" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Advanced Find View" displayName="PO Item Database Advanced Find View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{1a36031e-a8e5-47e2-b6c9-75e93dd8995f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_weightpurchaseunit" displayName="WeightPurchaseUnit" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_weightpurchaseunit" displayName="WeightPurchaseUnit" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_weightpurchaseunit" displayName="WeightPurchaseUnit" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_weightpurchaseunit" displayName="WeightPurchaseUnit" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_weightpurchaseunit" displayName="WeightPurchaseUnit" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_weightsalesunit" displayName="WeightSalesUnit" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Advanced Find View" displayName="PO Item Database Advanced Find View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{1a36031e-a8e5-47e2-b6c9-75e93dd8995f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_weightsalesunit" displayName="WeightSalesUnit" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_weightsalesunit" displayName="WeightSalesUnit" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_weightsalesunit" displayName="WeightSalesUnit" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_weightsalesunit" displayName="WeightSalesUnit" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="new_weightsalesunit" displayName="WeightSalesUnit" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="60" displayName="Information" parentDisplayName="PO Item Database" id="{6fb9f3c7-e4e7-48ad-ae44-dbb80fef2e3f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Active Purchase Items Databases" displayName="Active Purchase Items Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{41103851-1898-418d-b2b8-78f01abea4dd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Quick Find Active PO Item Databases" displayName="Quick Find Active PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{6e4399ba-a965-49ce-9659-73b1c0a27470}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="PO Item Database Associated View" displayName="PO Item Database Associated View" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{72968915-6a8b-41f7-8716-09cc2fe56ce4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" solution="Active" />
+        <Dependent type="26" schemaName="Inactive PO Item Databases" displayName="Inactive PO Item Databases" parentSchemaName="new_poitemdatabase" parentDisplayName="PO Item Database" id="{87b0294f-9ce3-403a-9462-5e9952252857}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="new_poolgroup" parentDisplayName="Pool Group" solution="Active" />
+        <Dependent type="26" schemaName="Pool Groups" displayName="Pool Groups" parentSchemaName="new_poolgroup" parentDisplayName="Pool Group" id="{71625989-11dd-4c17-8130-dc08d8b4b1c3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="adx_publishing_state_transition_rules.svg" displayName="adx_publishing_state_transition_rules.svg" solution="MicrosoftPortalBase (9.3.2509.0)">
+          <package appName="CDS Base Portal Package" version="9.3.2505.191">CDSBasePortal (9.3.2505.191)</package>
+        </Required>
+        <Dependent type="62" schemaName="crec6_ProcurementMa46e6be38" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="crec6_ProcurementMa254df74c" displayName="Procurement Manager Hub" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/imgs/CustomActions/SpecifyPattern.svg" displayName="msdyn_/imgs/CustomActions/SpecifyPattern.svg" solution="msdyn_ProjectServiceCore_Patch (1.0.151.27)">
+          <package appName="Project Service Core" version="1.0.151.27">msdyn_ProjectServiceCore_Anchor (1.0.151.27)</package>
+        </Required>
+        <Dependent type="62" schemaName="crec6_ProcurementMa46e6be38" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="mspcat_/box_24_regular.svg" displayName="mspcat_/box_24_regular.svg" solution="mspcat_CatalogPackaging (1.4.504.500)">
+          <package appName="Catalog Client" version="1.4.504.500">mspcat_CatalogPackaging (1.4.504.500)</package>
+        </Required>
+        <Dependent type="62" schemaName="crec6_ProcurementMa46e6be38" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="mspp_entity_lists.svg" displayName="mspp_entity_lists.svg" solution="PowerPages_AppResources (1.0.2505.0)">
+          <package appName="Power Pages Core Package" version="1.1.2508.192">PowerPages_Core (1.1.2508.192)</package>
+        </Required>
+        <Dependent type="62" schemaName="crec6_ProcurementMa46e6be38" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="ProductCatalog.svg" displayName="ProductCatalog.svg" solution="PowerPlatformEnvironmentSettings (1.1.1.2205)">
+          <package appName="PowerPlatformEnvironmentSettingsApp" version="1.1.1.2205">PowerPlatformEnvironmentSettingsApp_Anchor (1.1.1.2205)</package>
+        </Required>
+        <Dependent type="62" schemaName="crec6_ProcurementMa46e6be38" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.15)" id.uniquename="AppChannel">
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.23">PowerAppsAppFramework_Anchor (1.0.0.23)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=crec6_ProcurementMa254df74c,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="crec6_ProcurementMa254df74c" id.settingdefinitionid.uniquename="AppChannel" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="EnablePowerBIQuickReport" solution="SettingDefinitionsData (9.2.2508.2508132)" id.uniquename="EnablePowerBIQuickReport">
+          <package appName="AppModule" version="9.2.2508.2508132">AppModuleSolutionAnchor (9.2.2508.2508132)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=crec6_ProcurementMa254df74c,settingdefinitionid.uniquename=EnablePowerBIQuickReport" id.parentappmoduleid.uniquename="crec6_ProcurementMa254df74c" id.settingdefinitionid.uniquename="EnablePowerBIQuickReport" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="FormFillBarUXEnabled" solution="msdyn_FormsInfraSettings (1.0.0.8)" id.uniquename="FormFillBarUXEnabled">
+          <package appName="PowerAppsFormsApp Package" version="1.0.0.5">msdyn_FormsInsightSettings (1.0.0.5)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=crec6_ProcurementMa254df74c,settingdefinitionid.uniquename=FormFillBarUXEnabled" id.parentappmoduleid.uniquename="crec6_ProcurementMa254df74c" id.settingdefinitionid.uniquename="FormFillBarUXEnabled" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="IsAppGeneratedByPlanDesigner" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.15)" id.uniquename="IsAppGeneratedByPlanDesigner">
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.23">PowerAppsAppFramework_Anchor (1.0.0.23)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=crec6_ProcurementMa254df74c,settingdefinitionid.uniquename=IsAppGeneratedByPlanDesigner" id.parentappmoduleid.uniquename="crec6_ProcurementMa254df74c" id.settingdefinitionid.uniquename="IsAppGeneratedByPlanDesigner" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="IsSmartEmailAddressValidationControlEnabled" solution="msdyn_EmailAddressValidation (1.0.0.4)" id.uniquename="IsSmartEmailAddressValidationControlEnabled">
+          <package appName="DataValidationApp Package" version="1.0.0.4">DataValidationApp_Anchor (1.0.0.4)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=crec6_ProcurementMa254df74c,settingdefinitionid.uniquename=IsSmartEmailAddressValidationControlEnabled" id.parentappmoduleid.uniquename="crec6_ProcurementMa254df74c" id.settingdefinitionid.uniquename="IsSmartEmailAddressValidationControlEnabled" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="MobileCommandingImprovements2022Tablet" solution="msdyn_CommandingSettings (1.0.0.2)" id.uniquename="MobileCommandingImprovements2022Tablet">
+          <package appName="PowerAppsCommandingApp Package" version="1.0.0.6">PowerAppsCommandingApp_Anchor (1.0.0.6)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=crec6_ProcurementMa254df74c,settingdefinitionid.uniquename=MobileCommandingImprovements2022Tablet" id.parentappmoduleid.uniquename="crec6_ProcurementMa254df74c" id.settingdefinitionid.uniquename="MobileCommandingImprovements2022Tablet" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="msdyn_TimelineModernization" solution="msdyn_TimelineExtended (1.25094.2.5448)" id.uniquename="msdyn_TimelineModernization">
+          <package appName="msdyn_CustomControlsExtended" version="1.25094.2.5448">msdyn_TimelineExtended (1.25094.2.5448)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=crec6_ProcurementMa254df74c,settingdefinitionid.uniquename=msdyn_TimelineModernization" id.parentappmoduleid.uniquename="crec6_ProcurementMa254df74c" id.settingdefinitionid.uniquename="msdyn_TimelineModernization" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="NativeMobileDateTime" solution="SettingDefinitionsData (9.2.2508.2508132)" id.uniquename="NativeMobileDateTime">
+          <package appName="AppModule" version="9.2.2508.2508132">AppModuleSolutionAnchor (9.2.2508.2508132)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=crec6_ProcurementMa254df74c,settingdefinitionid.uniquename=NativeMobileDateTime" id.parentappmoduleid.uniquename="crec6_ProcurementMa254df74c" id.settingdefinitionid.uniquename="NativeMobileDateTime" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="NativeMobileInputs" solution="SettingDefinitionsData (9.2.2508.2508132)" id.uniquename="NativeMobileInputs">
+          <package appName="AppModule" version="9.2.2508.2508132">AppModuleSolutionAnchor (9.2.2508.2508132)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=crec6_ProcurementMa254df74c,settingdefinitionid.uniquename=NativeMobileInputs" id.parentappmoduleid.uniquename="crec6_ProcurementMa254df74c" id.settingdefinitionid.uniquename="NativeMobileInputs" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="OnlineMode" solution="msdyn_OfflineSettings (1.0.0.5)" id.uniquename="OnlineMode">
+          <package appName="PowerAppsOfflineApp Package" version="1.0.0.5">msdyn_OfflineSettings (1.0.0.5)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=crec6_ProcurementMa254df74c,settingdefinitionid.uniquename=OnlineMode" id.parentappmoduleid.uniquename="crec6_ProcurementMa254df74c" id.settingdefinitionid.uniquename="OnlineMode" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="SyncOnWifi" solution="msdyn_OfflineSettings (1.0.0.5)" id.uniquename="SyncOnWifi">
+          <package appName="PowerAppsOfflineApp Package" version="1.0.0.5">msdyn_OfflineSettings (1.0.0.5)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=crec6_ProcurementMa254df74c,settingdefinitionid.uniquename=SyncOnWifi" id.parentappmoduleid.uniquename="crec6_ProcurementMa254df74c" id.settingdefinitionid.uniquename="SyncOnWifi" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

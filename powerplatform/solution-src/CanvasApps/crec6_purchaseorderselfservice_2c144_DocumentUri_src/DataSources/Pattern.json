@@ -1,0 +1,97 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "new_patterns",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "new_pattern",
+    "Name": "Pattern",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "crec6_new_poitemdatabase_Pattern_new_pattern": "PO Item Databases",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "new_pattern_AsyncOperations": "System Jobs",
+      "new_pattern_BulkDeleteFailures": "Bulk Delete Failures",
+      "new_pattern_DuplicateBaseRecord": "Duplicate Records (new_pattern_DuplicateBaseRecord)",
+      "new_pattern_DuplicateMatchingRecord": "Duplicate Records (new_pattern_DuplicateMatchingRecord)",
+      "new_pattern_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "new_pattern_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "new_pattern_ProcessSession": "Process Sessions",
+      "new_pattern_SyncErrors": "Sync Errors",
+      "new_patternid": "Pattern",
+      "new_patternname": "Pattern Name",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Pattern",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Pattern (Views)",
+    "Name": "_new_pattern_views",
+    "RelatedEntityName": "Pattern",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3ebd6a58-3f46-4340-b282-4b4dd56a0282": "Pattern Lookup View",
+      "8281a2ab-05f6-446a-8290-7cb2333296a9": "Active Pattern",
+      "9f678b8f-bdec-4b01-afbd-f5bbe5320af4": "Pattern Associated View",
+      "d3ca956f-e5e5-4ea5-a8bf-bd5d8e45e05d": "Inactive Pattern",
+      "e2e6f8ae-436d-4b18-b2ae-1292583a28ae": "Pattern Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Pattern)",
+    "Name": "new_pattern_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Pattern"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Pattern",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Pattern)",
+    "Name": "new_pattern_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Pattern"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Pattern",
+    "Type": "OptionSetInfo"
+  }
+]

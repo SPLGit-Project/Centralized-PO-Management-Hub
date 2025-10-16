@@ -1,0 +1,19 @@
+<bot schemaname="crec6_bot838100">
+  <authenticationmode>2</authenticationmode>
+  <authenticationtrigger>1</authenticationtrigger>
+  <iscustomizable>1</iscustomizable>
+  <language>1033</language>
+  <name>Copilot in Power Apps - Procurement Man...</name>
+  <runtimeprovider>0</runtimeprovider>
+  <synchronizationstatus>{
+  "$kind": "BotSynchronizationDetails",
+  "contentVersion": 2,
+  "currentSynchronizationState": {
+    "$kind": "SynchronizationState",
+    "provisioningStatus": "ProvisionedWithoutRegistration",
+    "state": "Synchronized"
+  },
+  "lastSynchronizedOnUtc": "2025-10-08T07:49:29.7085494Z"
+}</synchronizationstatus>
+  <template>empty-1.0.0</template>
+</bot>

@@ -1,0 +1,109 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crec6_purchaseorderlines",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crec6_purchaseorderline",
+    "Name": "Purchase Order Lines",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "crec6_DeliveryReceipt_crec6_POLine_crec6_PurchaseOrderLine": "Delivery Receipts",
+      "crec6_lineno": "Line No",
+      "crec6_linetotal": "Line Total",
+      "crec6_linetotal_base": "Line Total (Base)",
+      "crec6_polinename": "POLine Name",
+      "crec6_PONumber": "PO Number",
+      "crec6_purchaseorderline_AsyncOperations": "System Jobs",
+      "crec6_purchaseorderline_BulkDeleteFailures": "Bulk Delete Failures",
+      "crec6_purchaseorderline_DuplicateBaseRecord": "Duplicate Records (crec6_purchaseorderline_DuplicateBaseRecord)",
+      "crec6_purchaseorderline_DuplicateMatchingRecord": "Duplicate Records (crec6_purchaseorderline_DuplicateMatchingRecord)",
+      "crec6_purchaseorderline_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crec6_purchaseorderline_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crec6_purchaseorderline_ProcessSession": "Process Sessions",
+      "crec6_purchaseorderline_SyncErrors": "Sync Errors",
+      "crec6_purchaseorderlineid": "Purchase Order Line",
+      "crec6_quantityordered": "Quantity Ordered",
+      "crec6_quantityreceived": "Quantity Received",
+      "crec6_SPLItemCode": "SPL Item Code",
+      "crec6_SupplierName": "Supplier Name",
+      "crec6_unitprice": "Unit Price",
+      "crec6_unitprice_base": "Unit Price (Base)",
+      "exchangerate": "Exchange Rate",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Purchase Order Lines",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Purchase Order Lines (Views)",
+    "Name": "_crec6_purchaseorderline_views",
+    "RelatedEntityName": "Purchase Order Lines",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2e77de74-0f65-427c-aca4-22e02ddfc8e8": "Active Purchase Order Lines",
+      "2e9f12cd-68ac-4778-8384-80965ce6148f": "Purchase Order Line Lookup View",
+      "362df97d-6585-4a6a-bf26-8268af7eaabe": "Purchase Order Line Associated View",
+      "713536b1-2efd-4cd0-a5aa-42d1c4d36a1a": "Purchase Order Line Advanced Find View",
+      "9aa57b2a-8bfb-4a9a-b10a-992961d1d665": "Inactive Purchase Order Lines"
+    }
+  },
+  {
+    "DisplayName": "Status (Purchase Order Lines)",
+    "Name": "crec6_purchaseorderline_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Purchase Order Lines"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Purchase Order Lines",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Purchase Order Lines)",
+    "Name": "crec6_purchaseorderline_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Purchase Order Lines"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Purchase Order Lines",
+    "Type": "OptionSetInfo"
+  }
+]

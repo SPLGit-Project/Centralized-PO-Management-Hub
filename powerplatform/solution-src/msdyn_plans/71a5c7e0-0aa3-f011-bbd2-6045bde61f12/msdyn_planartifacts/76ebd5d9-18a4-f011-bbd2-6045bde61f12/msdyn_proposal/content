@@ -1,0 +1,44 @@
+{
+  "name": "Finance Approval Assistant",
+  "description": "AI agent helps finance approvers summarize PO details, flag compliance risks, and draft comments during review.",
+  "typesOfUsers": [
+    "Finance approver"
+  ],
+  "tableSchemaNames": [
+    "crec6_PurchaseOrder",
+    "crec6_PurchaseOrderLine"
+  ],
+  "userStories": [
+    {
+      "id": "us16",
+      "description": "Add approval comments so that decisions are documented for record keeping.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us17",
+      "description": "View the history and comments of purchase orders so that I have context for my approvals.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us35",
+      "description": "Review purchase order header and line details so that I can ensure accuracy before making a decision.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us36",
+      "description": "See all supporting attachments for a purchase order so that I can make informed decisions on approvals.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us39",
+      "description": "Add finance notes to purchase orders so that financial considerations are documented for reference.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us40",
+      "description": "Ensure purchase orders comply with budget constraints so that financial policies are followed.",
+      "userType": "Finance approver"
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "new_cataloggroups",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "new_cataloggroup",
+    "Name": "Catalog Group",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "new_cataloggroup_AsyncOperations": "System Jobs",
+      "new_cataloggroup_BulkDeleteFailures": "Bulk Delete Failures",
+      "new_cataloggroup_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "new_cataloggroup_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "new_cataloggroup_ProcessSession": "Process Sessions",
+      "new_cataloggroup_SyncErrors": "Sync Errors",
+      "new_cataloggroupid": "Catalog Group",
+      "new_groupcode": "CatalogGroupCode",
+      "new_groupname": "CatalogGroupName",
+      "new_poitemdatabase_new_catalog_new_cataloggroup": "PO Item Databases",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Catalog Group",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Catalog Group (Views)",
+    "Name": "_new_cataloggroup_views",
+    "RelatedEntityName": "Catalog Group",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0304e124-4bb9-4f89-a987-87b79aa40246": "Catalog Group Associated View",
+      "15558630-4f8a-4774-bc47-34fb1d6c87cf": "Active Catalog Group",
+      "9001d54a-e427-4964-a743-2a0ca2fcdae6": "Catalog Group Lookup View",
+      "e55bcd9a-f54e-4b92-b9cb-2d17cab5b989": "Inactive Catalog Group",
+      "f0c52811-5698-4297-8e30-22b9d22347a0": "Catalog Group Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Catalog Group)",
+    "Name": "new_cataloggroup_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Catalog Group"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Catalog Group",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Catalog Group)",
+    "Name": "new_cataloggroup_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Catalog Group"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Catalog Group",
+    "Type": "OptionSetInfo"
+  }
+]

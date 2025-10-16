@@ -1,0 +1,49 @@
+{
+  "name": "Approval Routing Engine",
+  "description": "Routes PO approvals, handles thresholds, escalates overdue requests, and sends alerts for timely action and compliance.",
+  "typesOfUsers": [
+    "Procurement manager",
+    "Finance approver"
+  ],
+  "tableSchemaNames": [
+    "crec6_PurchaseOrder"
+  ],
+  "userStories": [
+    {
+      "id": "us08",
+      "description": "Approve or reject submitted purchase orders so that only valid requests are processed.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us14",
+      "description": "Receive approval requests when purchase orders are submitted so that I can review them promptly.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us15",
+      "description": "Approve or reject submitted purchase orders so that financial oversight is ensured.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us18",
+      "description": "Receive notifications when a purchase order requires my attention so that I do not miss critical approval tasks.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us24",
+      "description": "Set approval thresholds for purchase orders so that requests exceeding a certain value trigger additional review.",
+      "userType": "Procurement manager"
+    },
+    {
+      "id": "us38",
+      "description": "Delegate or escalate approval tasks to another finance approver if a request is overdue so that approvals are not delayed.",
+      "userType": "Finance approver"
+    },
+    {
+      "id": "us41",
+      "description": "Receive alerts for pending or escalated approvals so that I can promptly address urgent purchase order tasks.",
+      "userType": "Finance approver"
+    }
+  ],
+  "version": 1
+}

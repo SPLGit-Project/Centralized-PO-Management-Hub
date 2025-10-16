@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>crec6_ProcurementMa254df74c</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="crec6_polocation" />
+    <AppModuleComponent type="1" schemaName="crec6_purchaseorder" />
+    <AppModuleComponent type="1" schemaName="crec6_purchaseorderline" />
+    <AppModuleComponent type="1" schemaName="crec6_supplier" />
+    <AppModuleComponent type="1" schemaName="new_cataloggroup" />
+    <AppModuleComponent type="1" schemaName="new_material" />
+    <AppModuleComponent type="1" schemaName="new_pattern" />
+    <AppModuleComponent type="1" schemaName="new_poitemdatabase" />
+    <AppModuleComponent type="1" schemaName="new_poolgroup" />
+    <AppModuleComponent type="62" schemaName="crec6_ProcurementMa46e6be38" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Procurement Manager Hub" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="For procurement managers to maintain catalogs, suppliers, approve orders, manage lookup data and analyze procurement activities." languagecode="1033" />
+  </Descriptions>
+  <appsettings>
+    <appsetting settingdefinitionid.uniquename="AppChannel">
+      <iscustomizable>1</iscustomizable>
+      <value>1</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="EnablePowerBIQuickReport">
+      <iscustomizable>1</iscustomizable>
+      <value>false</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="FormFillBarUXEnabled">
+      <iscustomizable>1</iscustomizable>
+      <value>2</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="IsAppGeneratedByPlanDesigner">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="IsSmartEmailAddressValidationControlEnabled">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="MobileCommandingImprovements2022Tablet">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="msdyn_TimelineModernization">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="NativeMobileDateTime">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="NativeMobileInputs">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="OnlineMode">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="SyncOnWifi">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+  </appsettings>
+</AppModule>
