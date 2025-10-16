@@ -1,0 +1,9 @@
+﻿# Build outputs
+dist/
+node_modules/
+
+# VS Code
+.vscode/
+
+# Power Platform solution zips (optional to exclude)
+*.zip
